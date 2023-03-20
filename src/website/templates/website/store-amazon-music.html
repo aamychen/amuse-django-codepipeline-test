@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store amazon-music{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-amazon-music.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Amazon Prime</h4>
+	Using our Amuse app you can easily upload your music to Amazon Prime. Because Amazon Prime is a default store when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About Amazon Prime</h5>
+	<p>Prime Music provides ad-free access to curated Prime Playlists and personalized Prime Stations, plus more than a million songs and albums at no additional cost for eligible Prime members. Prime Music is a part of the Prime suite of services that comes exclusively with a Prime membership. The services includes free two-day shipping, Prime Video, and the Kindle Owners’ Lending Library. Prime Playlists are handcrafted collections of songs from Amazon’s Prime Music catalog. Users can also mix their music and Prime Music to create their own personal playlists. Prime members can play Prime Music on compatible devices that support Amazon Music.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.amazon.com/gp/dmusic/promotions/PrimeMusic">Amazon Prime</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>20</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

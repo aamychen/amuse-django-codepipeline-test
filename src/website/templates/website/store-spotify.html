@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store spotify{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-spotify.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Spotify</h4>
+	Using our app you can easily upload your music to Spotify. Because Spotify is a default store when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About Spotify</h5>
+	<p>Spotify is a leading streaming music service with more than 100 million users. Artists get paid every time somebody listens to their music on Spotify. Spotify is available in most of the Americas, Europe, and some countries in Asia and Oceania. You can use Spotify on your computer as well as on your mobile. There are a few different ways of paying for Spotify, but they are one of the few streaming services that operate on a freemium model. Where many users start as free users (ad funded model with some limitations) and then move over to the premium service (more functionality and no limitations).</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.spotify.com">Spotify</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>61</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

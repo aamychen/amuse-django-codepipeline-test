@@ -1,0 +1,148 @@
+<div class="rounded-2 bg-white border p-2 mt-2">
+<h5 class="pt-2 ps-2">
+  <i class="bi bi-truck me-2"></i>
+  Direct Delivery Stores
+</h5>
+<table class="table table-hover table-borderless">
+  <thead>
+    <tr>
+      <th class="col-1">Store</th>
+      <th class="col-4">Actions</th>
+      <th class="col-1">Delivered/Takendown</th>
+      <th class="col-2">Last Delivery Action</th>
+      <th class="col-2">Last Delivery Status</th>
+      <th class="col-1">Deliveries</th>
+      <th class="col-1">Triggered By</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for delivery_info in direct_delivery_stores %}
+<tr>
+  <td class="align-middle">
+    {{ delivery_info.store.name }}
+  </td>
+  <td class="align-middle">
+    {% if delivery_info.deliver_to == True and is_valid_for_delivery %}
+      <button
+        type="submit"
+        class="btn btn-primary"
+        name="deliver_single"
+        value="{{ delivery_info.channel_name }}:insert">
+        Insert/Full Update
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        name="deliver_single"
+        value="{{ delivery_info.channel_name }}:update">
+        Update metadata
+      </button>
+    {% else %}
+      <span class="tool-tip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ delivery_info.excluded_reason }}">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          name="deliver_single"
+          value="{{ delivery_info.channel_name }}:insert"
+          disabled>
+          Insert/Full Update
+        </button>
+      </span>
+      <span class="tool-tip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ delivery_info.excluded_reason }}">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          name="deliver_single"
+          value="{{ delivery_info.channel_name }}:update"
+          disabled>
+          Update metadata
+        </button>
+      </span>
+    {% endif %}
+    {% if delivery_info.delivery_status.status == "delivered" %}
+      <button
+        type="submit"
+        class="btn btn-primary"
+        name="deliver_single"
+        value="{{ delivery_info.channel_name }}:takedown">
+        Takedown
+      </button>
+    {% else %}
+      <span class="tool-tip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cannot perform a takedown from stores without completed deliveries">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          name="deliver_single"
+          value="{{ delivery_info.channel_name }}:takedown"
+          disabled>
+          Takedown
+        </button>
+      </span>
+    {% endif %}
+  </td>
+  <td class="align-middle">
+    {% if delivery_info.delivery_status and delivery_info.delivery_status.status == 'delivered' %}
+      <span class="text-success">{{ delivery_info.delivery_status.delivered_at|date:"Y-m-d H:i" }}</span>
+    {% elif delivery_info.delivery_status and delivery_info.delivery_statys == 'taken_down' %}
+      <span class="text-error">{{ delivery_info.delivery_status.delivered_at|date:"Y-m-d H:i" }}</span>
+    {% elif delivery_info.delivery_status.channel_name in started_channels %}
+      <span class="text-secondary">Started</span>
+    {% else %}
+      <span class="text-secondary">n/a</span>
+    {% endif %}
+  </td>
+  <td class="align-middle">
+    {% if delivery_info.last_delivery %}
+      <a
+          href="{% url 'admin:amuse_batchdelivery_change' delivery_info.last_delivery.delivery.pk %}"
+          target="_blank"
+      >
+      {{ delivery_info.last_delivery.get_type_display|upper }}
+      {{ delivery_info.last_delivery.date_created|date:"Y-m-d H:i" }}
+      </a>
+    {% endif %}
+  </td>
+  <td class="align-middle">
+    {% if delivery_info.last_delivery %}
+      {% if delivery_info.last_delivery.get_status_display == "succeeded" %}
+        <span class="badge bg-success fs-6">Success</span>
+      {% elif delivery_info.last_delivery.get_status_display == "failed" %}
+        <span class="badge bg-danger fs-6">Failed</span>
+      {% elif delivery_info.last_delivery.get_status_display is None %}
+        <span class="badge bg-secondary fs-6">n/a</span>
+      {% else %}
+        <span class="badge bg-info text-dark fs-6">
+          {{ delivery_info.last_delivery.get_status_display|capfirst }}
+        </span>
+      {% endif %}
+    {% endif %}
+  </td>
+  <td class="align-middle">
+    {% if delivery_info.last_delivery %}
+      <a href="{% url 'admin:amuse_batchdelivery_changelist' %}?channel__exact={{ delivery_info.last_delivery.delivery.channel }}&q={{ release.pk }}"
+      target="_blank"
+      >
+          Link
+      </a>
+    {% else %}
+      <span class="text-secondary">n/a</span>
+    {% endif %}
+  </td>
+  <td>
+    {% if delivery_info.last_delivery %}
+      {% if delivery_info.last_delivery.delivery.batch.user %}
+      <a href="{% url 'admin:users_user_change' delivery_info.last_delivery.delivery.batch.user.pk %}" target="_blank">
+        {{ delivery_info.last_delivery.delivery.batch.user.name }}
+      </a>
+      {% else %}
+        <span class="text-secondary">Unknown</span>
+      {% endif %}
+    {% else %}
+      <span class="text-secondary">n/a</span>
+    {% endif %}
+  </td>
+</tr>
+</tbody>
+{% endfor %}
+</table>
+</div>

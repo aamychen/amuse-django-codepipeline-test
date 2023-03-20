@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "BrownStd";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url("../fonts/BrownStd-Regular.otf");
+}
+
+@font-face {
+  font-family: "BrownStd";
+  font-style: normal;
+  font-weight: 700;
+
+  src: url("../fonts/BrownStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "BrownStd";
+  font-style: normal;
+  font-weight: 200;
+
+  src: url("../fonts/BrownStd-Light.otf");
+}
+
+@font-face {
+  font-family: "BrownStd";
+  font-style: normal;
+  font-weight: 100;
+
+  src: url("../fonts/BrownStd-Thin.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "BrownStd";
+  font-weight: 400;
+  background: #1e1e1e;
+  color: #fff;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 80px;
+}
+
+a {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+form {
+  margin-top: 2.5em;
+}
+
+form.has-errors input {
+  border-color: #fa2d2d;
+}
+
+button,
+.button {
+  background-color: #fae62d;
+  color: #000;
+  border: 0;
+  border-radius: 50px;
+  padding: 0 50px;
+  margin-top: 50px;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: transparent;
+  width: 100%;
+  border: 2px solid #fae62d;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #fae62d;
+  border-width: 0 0 1px 0;
+}
+
+.errorlist {
+  padding: 0;
+  margin: -10px 0 0 0;
+  list-style: none;
+}
+
+  .errorlist li {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 200;
+    color: red;
+  }
+
+label span {
+  display: block;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.logo {
+  text-indent: -999em;
+  font-size: 0;
+  margin: 0;
+}
+
+  .logo img {
+    display: block;
+    width: 79px;
+  }
+
+.main {
+  padding: 30px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.footer,
+.header {
+  background: #000;
+}
+
+.header {
+  padding: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+}
+

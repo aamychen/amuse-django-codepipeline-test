@@ -1,0 +1,61 @@
+{% extends "admin/contenttollgate/assigned_release_change_form.html" %} {% load i18n %}
+{% block object-tools-items %}
+
+  <div class="toolbar-release-options-container">
+
+    <fieldset class="toolbar-assign-release-option">
+      <legend>Language Type: </legend>
+      <input type="radio" id="spanish-only" name="language-selection" value="spanish">
+      <label for="spanish-only">Spanish Only</label><br/>
+      <input type="radio" id="non-spanish" name="language-selection" value="non-spanish">
+      <label for="non-spanish">Non-spanish</label><br/>
+    </fieldset>
+  </div>
+
+  <div class="release-assignment-buttons">
+    <div class="free-button toolbar-assign-release-row">
+      <li>
+        <button class="historylink" onclick="triggerAssignment(event, 'free', 'created_date')">Assign pending [Created date]</button>
+      </li>
+      <li>
+        <button class="historylink" onclick="triggerAssignment(event, 'free', 'release_date')">Assign pending [Release date]</button>
+      </li>
+      <li><span>{{ pending_release_count }}</span></li>
+    </div>
+
+    <div class="plus-button toolbar-assign-release-row">
+      <li>
+        <button class="historylink" onclick="triggerAssignment(event, 'plus', 'created_date')">Assign pending PLUS [Created date]</button>
+      </li>
+      <li>
+        <button class="historylink" onclick="triggerAssignment(event, 'plus', 'release_date')">Assign pending PLUS [Release date]</button>
+      </li>
+      <li><span>{{ pending_plus_release_count }}</span></li>
+    </div>
+
+    <div class="pro-button toolbar-assign-release-row">
+      <li>
+        <button class="historylink" onclick="triggerAssignment(event, 'pro', 'created_date')">Assign pending PRO [Created date]</button>
+      </li>
+      <li>
+        <button class="historylink" onclick="triggerAssignment(event, 'pro', 'release_date')">Assign pending PRO [Release date]</button>
+      </li>
+      <li><span>{{ pending_pro_release_count }}</span></li>
+    </div>
+  </div>
+
+<script>
+  function triggerAssignment(evt, subscription, sort) {
+
+    var request_url = "{% url 'admin:assign_pending_releases' %}?sort=" + sort + "&subscription=" + subscription
+
+    var language = document.querySelector('input[name="language-selection"]:checked');
+    if(language!=null){
+      request_url += "&language=" + language.value
+    }
+
+    location.href = request_url;
+  }
+</script>
+
+{% endblock %}

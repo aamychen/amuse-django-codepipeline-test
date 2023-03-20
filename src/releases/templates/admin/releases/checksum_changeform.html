@@ -1,0 +1,14 @@
+{% extends 'admin/change_form.html' %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    <div class="submit-row">
+      <div style="float: left;">
+        Verified checksum is <strong>{{ verified_checksum }}</strong> and stored
+        checksum is <strong>{{ stored_checksum }}</strong>. Press the "Re-generate checksum" button if the checksums
+        don't match.
+      </div>
+      <input type="hidden" value="{{ verified_checksum }}" name="verified_checksum">
+      <input type="submit" value="Re-generate checksum" name="regenerate_checksum">
+    </div>
+{% endblock %}

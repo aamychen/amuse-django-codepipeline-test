@@ -1,0 +1,16 @@
+{% for warning in analysis_results.spotify_watchlist_warnings %}
+  {% if warning.show_warning %}
+    <li class="spotify-watchlist-warning list-group-item"><b class="warning-type">Spotify Watchlist</b>
+      match for artist <b> {{ warning.watchlist_artist_name }}</b>
+      {% if warning.watchlist_aritst_uri %}
+        <a href="{{ warning.watchlist_artist_uri|generate_spotify_url_from_uri }}" target="_blank">
+          <i class="bi bi-spotify"></i>
+        </a>
+      {% endif %}
+      {% if 'track_id' in warning %}
+        (song {{ songs|get_song_sequence:warning.track_id}})
+        <a href="#{{ warning.track_id }}" class="bi bi-box-arrow-up-right"></a>
+      {% endif %}
+    </li>
+  {% endif %}
+{% endfor %}

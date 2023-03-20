@@ -1,0 +1,32 @@
+<a class="btn btn-dark btn-sm" data-bs-toggle="collapse" href="#debug-info" role="button" aria-expanded="false" aria-controls="debug-info">
+    Show/Hide Debug
+  </a>
+<div class="collapse p-4" id="debug-info">
+  <h5>Direct Delivery Feeds</h5>
+  <table class=table">
+  {% for store, info in direct_feed_stores %}
+  <tr>
+    <td>{{ store }}</td>
+    <td>{{ info }}</td>
+  </tr>
+  {% endfor %}
+  </table>
+  <h5>Fuga Feed</h5>
+  <table class="table">
+  {% for store, info in fuga_feed_stores.items %}
+  <tr>
+    <td>{{ store}}</td>
+    <td>{{ info }}</td>
+  </tr>
+  {% endfor %}
+  </table>
+  <h5>Fuga API Data</h5>
+  <table class="table">
+  {% for store, info in fuga_api_results.items %}
+  <tr>
+    <td>{{ store}}</td>
+    <td>{{ info }}</td>
+  </tr>
+  {% endfor %}
+  </table>
+</div>

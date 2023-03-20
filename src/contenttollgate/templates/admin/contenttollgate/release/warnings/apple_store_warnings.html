@@ -1,0 +1,35 @@
+{% with has_multiple_warnings=analysis_results.apple_store_warnings|has_multiple_warnings  %}
+  {% if has_multiple_warnings %}
+    <li class="list-group-item"><b class="warning-type">ISRC found on Apple Store</b>
+      for songs:
+      <ul id="song-position-list">
+        {% for warning in analysis_results.apple_store_warnings %}
+          {% if warning.show_warning %}
+            <li><a id="acr-warning-{{ warning.track_id }}" href="#{{ warning.track_id }}">{{ songs|get_song_sequence:warning.track_id }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% else %}
+    {% for warning in analysis_results.apple_store_warnings %}
+      {% if warning.show_warning %}
+        <li class="list-group-item"><b class="warning-type">ISRC found on Apple Store</b>
+          Matches <b> {{ warning.isrc }}</b>
+          {% if 'track_id' in warning %}
+            (song {{ songs|get_song_sequence:warning.track_id}})
+            <a href="#{{ warning.track_id }}" class="bi bi-box-arrow-up-right"></a>
+          {% else %}
+            <div class="apple-matches">
+              {% for match in warning.matches %}
+                <div>
+                  <i>{{ match.collection.artist_display_name }} - {{ match.collection.name }}</i> <b>{{ match.collection.content_provider_name }}</b>
+                  <a href="{{ match.collection.view_url }}" target="_blank"><i class="bi bi-apple"></i></a>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endwith %}

@@ -1,0 +1,560 @@
+[
+    {
+        "model": "countries.currency",
+        "pk": 1,
+        "fields": {
+            "code": "INR",
+            "name": "Indian Rupee",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 2,
+        "fields": {
+            "code": "DKK",
+            "name": "Danish Krone",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 3,
+        "fields": {
+            "code": "CHF",
+            "name": "Swiss Franc",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 4,
+        "fields": {
+            "code": "NOK",
+            "name": "Norwegian Krone",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 5,
+        "fields": {
+            "code": "USD",
+            "name": "US Dollar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 6,
+        "fields": {
+            "code": "SEK",
+            "name": "Swedish Krone",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 7,
+        "fields": {
+            "code": "EUR",
+            "name": "Euro",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 8,
+        "fields": {
+            "code": "NGN",
+            "name": "Nigerian Naira",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 9,
+        "fields": {
+            "code": "GHS",
+            "name": "Ghanaian Cedi",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 10,
+        "fields": {
+            "code": "GBP",
+            "name": "Pound Sterling",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 11,
+        "fields": {
+            "code": "IDR",
+            "name": "Indonesian Rupiah",
+            "decimals": 0
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 12,
+        "fields": {
+            "code": "PEN",
+            "name": "Peruvian Nuevo Sol",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 13,
+        "fields": {
+            "code": "JPY",
+            "name": "Japanese Yen",
+            "decimals": 0
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 14,
+        "fields": {
+            "code": "PHP",
+            "name": "Philippine Peso",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 15,
+        "fields": {
+            "code": "AUD",
+            "name": "Australian Dollar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 16,
+        "fields": {
+            "code": "ZAR",
+            "name": "South African Rand",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 17,
+        "fields": {
+            "code": "MXN",
+            "name": "Mexican Peso",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 18,
+        "fields": {
+            "code": "CLP",
+            "name": "Chilean Peso",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 19,
+        "fields": {
+            "code": "BRL",
+            "name": "Brazilian Real",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 20,
+        "fields": {
+            "code": "COP",
+            "name": "Colombian Peso",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 21,
+        "fields": {
+            "code": "ARS",
+            "name": "Nuevo Argentine Peso",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 22,
+        "fields": {
+            "code": "TRY",
+            "name": "New Turkish Lira",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 23,
+        "fields": {
+            "code": "DZD",
+            "name": "Algerian Dinar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 24,
+        "fields": {
+            "code": "BDT",
+            "name": "Taka",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 25,
+        "fields": {
+            "code": "BOB",
+            "name": "Boliviano",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 26,
+        "fields": {
+            "code": "BGN",
+            "name": "Bulgarian Lev",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 27,
+        "fields": {
+            "code": "CAD",
+            "name": "Canadian Dollar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 28,
+        "fields": {
+            "code": "CRC",
+            "name": "Costa Rican Colon",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 29,
+        "fields": {
+            "code": "HRK",
+            "name": "Kuna",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 30,
+        "fields": {
+            "code": "CZK",
+            "name": "Czech Koruna",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 31,
+        "fields": {
+            "code": "EGP",
+            "name": "Egyptian Pound",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 32,
+        "fields": {
+            "code": "GEL",
+            "name": "Lari",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 33,
+        "fields": {
+            "code": "HKD",
+            "name": "Hong Kong Dollar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 34,
+        "fields": {
+            "code": "HUF",
+            "name": "Forint",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 35,
+        "fields": {
+            "code": "IQD",
+            "name": "Iraqi Dinar",
+            "decimals": 3
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 36,
+        "fields": {
+            "code": "ILS",
+            "name": "New Israeli Sheqel",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 37,
+        "fields": {
+            "code": "JOD",
+            "name": "Jordanian Dinar",
+            "decimals": 3
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 38,
+        "fields": {
+            "code": "KZT",
+            "name": "Tenge",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 39,
+        "fields": {
+            "code": "KES",
+            "name": "Kenyan Shilling",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 40,
+        "fields": {
+            "code": "LBP",
+            "name": "Lebanese Pound",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 41,
+        "fields": {
+            "code": "MOP",
+            "name": "Pataca",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 42,
+        "fields": {
+            "code": "MYR",
+            "name": "Malaysian Ringgit",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 43,
+        "fields": {
+            "code": "MAD",
+            "name": "Moroccan Dirham",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 44,
+        "fields": {
+            "code": "MMK",
+            "name": "Kyat",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 45,
+        "fields": {
+            "code": "NZD",
+            "name": "New Zealand Dollar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 46,
+        "fields": {
+            "code": "PKR",
+            "name": "Pakistan Rupee",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 47,
+        "fields": {
+            "code": "PYG",
+            "name": "Guarani",
+            "decimals": 0
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 48,
+        "fields": {
+            "code": "PLN",
+            "name": "Zloty",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 49,
+        "fields": {
+            "code": "QAR",
+            "name": "Qatari Rial",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 50,
+        "fields": {
+            "code": "RON",
+            "name": "Romanian Leu",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 51,
+        "fields": {
+            "code": "RUB",
+            "name": "Russian Ruble",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 52,
+        "fields": {
+            "code": "SAR",
+            "name": "Saudi Riyal",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 53,
+        "fields": {
+            "code": "RSD",
+            "name": "Serbian Dinar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 54,
+        "fields": {
+            "code": "SGD",
+            "name": "Singapore Dollar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 55,
+        "fields": {
+            "code": "KRW",
+            "name": "Won",
+            "decimals": 0
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 56,
+        "fields": {
+            "code": "LKR",
+            "name": "Sri Lanka Rupee",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 57,
+        "fields": {
+            "code": "TWD",
+            "name": "New Taiwan Dollar",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 58,
+        "fields": {
+            "code": "TZS",
+            "name": "Tanzanian Shilling",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 59,
+        "fields": {
+            "code": "THB",
+            "name": "Baht",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 60,
+        "fields": {
+            "code": "UAH",
+            "name": "Hryvnia",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 61,
+        "fields": {
+            "code": "AED",
+            "name": "UAE Dirham",
+            "decimals": 2
+        }
+    },
+    {
+        "model": "countries.currency",
+        "pk": 62,
+        "fields": {
+            "code": "VND",
+            "name": "Dong",
+            "decimals": 0
+        }
+    }
+]

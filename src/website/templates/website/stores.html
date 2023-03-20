@@ -1,0 +1,32 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}stores{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<h1>Partners in <span>Music.</<span></h1>
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	We distribute your music to all major digital music services.<br>Click to read more about each service. Check back on a regular basis as we’re constantly adding more services.
+</div>
+
+<ul>
+	<a href="/stores/spotify/"><li class="spotify">Spotify</li></a>
+	<a href="/stores/apple-music/"><li class="apple-music">Apple Music</li></a>
+	<a href="/stores/itunes/"><li class="itunes">iTunes</li></a>
+	<a href="/stores/deezer/"><li class="deezer">Deezer</li></a>
+	<a href="/stores/google-play-music/"><li class="google-play-music">Google Play Music</li></a>
+	<a href="/stores/youtube/"><li class="youtube">Youtube</li></a>
+	<a href="/stores/youtube-red/"><li class="youtube-red">Youtube Red</li></a>
+	<a href="/stores/tidal/"><li class="tidal">Tidal</li></a>
+	<a href="/stores/amazon-music/"><li class="amazon-music">Amazon Music</li></a>
+	<a href="/stores/napster/"><li class="napster">Napster</li></a>
+	<a href="/stores/shazam/"><li class="shazam">Shazam</li></a>
+	<a href="/stores/pandora/"><li class="pandora">Pandora</li></a>
+</ul>
+{% endblock %}

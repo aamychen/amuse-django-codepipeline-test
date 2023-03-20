@@ -1,0 +1,29 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store pandora{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-pandora.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Pandora</h4>
+	Using our Amuse app you can easily upload your music to Pandora. Because Pandora is a default store when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About Pandora</h5>
+	<p>Pandora gives users personalized radio that plays what they love and continually evolves with their tastes as they use the service. Users may start with the name of an artist, song, genre, or comedian, and create a station. Personalizing listening experience is super simple. 
+    If users like a song they can give it a thumbs up, and they will hear more like it. If they don't like it they can give a thumbs down and that song and similar will not play again. Pandora is only available in the U.S., Australia, and New Zealand right now.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.pandora.com">Pandora</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>3</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

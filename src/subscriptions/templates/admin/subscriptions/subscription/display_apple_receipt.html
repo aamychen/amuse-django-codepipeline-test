@@ -1,0 +1,11 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+
+{% block content %}
+    <form method="post">{% csrf_token %}
+      <pre>{{receipt_data}}</pre>
+      <input type=button value="Back" onClick="javascript:history.go(-1);">
+
+    </form>
+{% endblock %}

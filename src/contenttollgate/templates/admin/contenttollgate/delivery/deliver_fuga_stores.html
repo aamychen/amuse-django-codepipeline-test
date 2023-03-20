@@ -1,0 +1,56 @@
+<div class="rounded-2 bg-white border p-2 mt-2">
+  <h5 class="pt-2 ps-2">
+    <i class="bi bi-truck me-2"></i>
+    Deliver to Fuga delivery stores
+  </h5>
+  {% if fuga_stores %}
+    <button
+      type="submit"
+      class="btn btn-primary"
+      name="deliver_single"
+      value="fuga:full_update"
+      {% if not is_valid_for_delivery %}disabled{% endif %}>
+      Update
+    </button>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      name="deliver_single"
+      value="fuga:takedown">
+      Takedown
+    </button>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      name="sync_fuga_data"
+      value="true">
+      <i class="bi bi-arrow-clockwise"></i>
+    </button>
+    <table class="table table-hover table-borderless">
+      <thead>
+        <tr>
+          <th class="col-2">Stores</th>
+          <th class="col-3">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for fuga_store in fuga_stores %}
+          <tr>
+            <td class="align-middle">
+              {{ fuga_store.name }}
+            </td>
+            <td class="align-middle">
+              {% if fuga_store.delivery_status.status == 'delivered' %}
+                <span class="text-success">{{ fuga_store.delivery_status.status|capfirst }} - {{ fuga_store.delivery_status.delivered_at|date:"Y-m-d H:i" }}</span>
+              {% else %}
+                <span class="text-error">{{ fuga_store.delivery_status.status|capfirst }} - {{ fuga_store.delivery_status.delivered_at|date:"Y-m-d H:i" }}</span>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No Fuga feed stores for this release</p>
+  {% endif %}
+</div>

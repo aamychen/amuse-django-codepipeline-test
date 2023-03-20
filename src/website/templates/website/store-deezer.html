@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store deezer{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-deezer.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Deezer</h4>
+	Using our Amuse app you can easily upload your music to Deezer. Because Deezer is a default store when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About Deezer</h5>
+	<p>Deezer is a web-based music streaming service, and is also available on mobile devices. Deezer was founded in Paris, France, the service currently has 40 million licensed tracks in its library, over 30,000 radio channels, 16 million monthly active users, and 5 million paid subscribers as of 6 November 2013.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.deezer.com">Deezer</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>187</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

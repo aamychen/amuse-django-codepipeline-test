@@ -1,0 +1,120 @@
+[
+    {
+        "id": 123000000,
+        "identifier": "spotify:artist:identifier",
+        "issuingOrganization": {
+            "id": 746109,
+            "name": "Spotify",
+            "delivery_capabilities": [
+                {
+                    "id": "ARTIST_IDENTIFIER",
+                    "name": "Artist identifiers issued by the DSP"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                }
+            ]
+        },
+        "newForIssuingOrg": false
+    },
+    {
+        "id": 123000001,
+        "identifier": "1122334455",
+        "issuingOrganization": {
+            "id": 1330598,
+            "name": "Apple Music",
+            "delivery_capabilities": [
+                {
+                    "id": "ARTIST_IDENTIFIER",
+                    "name": "Artist identifiers issued by the DSP"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "LYRICS",
+                    "name": "Allow sending lyrics as part of a DDEX delivery"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                },
+                {
+                    "id": "PRE_ORDER_ONLY",
+                    "name": "PreOrder Only"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "ATTACHMENTS",
+                    "name": "All attachment types"
+                },
+                {
+                    "id": "LABEL_IDENTIFIERS",
+                    "name": "Label identifiers issued by the DSP"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "INSTANT_GRATIFICATION",
+                    "name": "Instant gratification"
+                }
+            ]
+        },
+        "newForIssuingOrg": false
+    }
+]

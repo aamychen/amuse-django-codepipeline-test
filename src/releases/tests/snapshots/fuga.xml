@@ -1,0 +1,185 @@
+<ingestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://fugamusic.com/docs/ingestion/ingestion.xsd">
+  <action>INSERT</action>
+  <album>
+    <c_line_text>Amazing Arts</c_line_text>
+    <c_line_year>2018</c_line_year>
+    <catalog_number>51265125</catalog_number>
+    <supplier>amuse</supplier>
+    <cover_art>
+      <image>
+        <file>
+          <name>81620519571.jpg</name>
+          <size>3</size>
+        </file>
+      </image>
+    </cover_art>
+    <consumer_release_date>2015-06-10</consumer_release_date>
+    <original_release_date>2015-06-10</original_release_date>
+    <label>Amazing Arts</label>
+    <main_genre>Explosive Brit Pop</main_genre>
+    <name>Amused by my dog</name>
+    <p_line_text>Amazing Arts</p_line_text>
+    <p_line_year>2018</p_line_year>
+    <language>EN</language>
+    <parental_advisory>false</parental_advisory>
+    <primary_artist>
+      <name>DJ Artist</name>
+    </primary_artist>
+    <additional_artists>
+      <artist>
+        <name>DJ Featured</name>
+        <primary_artist>false</primary_artist>
+      </artist>
+    </additional_artists>
+    <release_format_type>SINGLE</release_format_type>
+    <territories/>
+    <release_version>v1.2</release_version>
+    <total_discs>1</total_discs>
+    <tracks>
+      <track>
+        <available_separately>true</available_separately>
+        <isrc_code>7812512905</isrc_code>
+        <language>EN</language>
+        <main_genre>Holy Buffalo Synth</main_genre>
+        <audio_locale>EN</audio_locale>
+        <name>Old but good</name>
+        <track_version>v1.1</track_version>
+        <on_disc>1</on_disc>
+        <parental_advisory>false</parental_advisory>
+        <primary_artist>
+          <name>DJ Artist</name>
+        </primary_artist>
+        <additional_artists>
+          <artist>
+            <name>DJ Featured</name>
+            <primary_artist>false</primary_artist>
+          </artist>
+        </additional_artists>
+        <contributors>
+          <contributor>
+            <name>DJ Artist</name>
+            <role>Writer</role>
+          </contributor>
+        </contributors>
+        <publishers>
+          <publisher>
+            <publisher_name>Copyright Control</publisher_name>
+            <writer_name>DJ Artist</writer_name>
+          </publisher>
+        </publishers>
+        <resources>
+          <audio>
+            <file>
+              <name>81620519571_1_01.flac</name>
+              <size>3</size>
+            </file>
+          </audio>
+        </resources>
+        <recording_year>1984</recording_year>
+        <sequence_number>1</sequence_number>
+      </track>
+      <track>
+        <available_separately>true</available_separately>
+        <isrc_code>712424905</isrc_code>
+        <language>EN</language>
+        <main_genre>Stained Glass Tribal</main_genre>
+        <audio_locale>EN</audio_locale>
+        <name>Nice with some Dice</name>
+        <track_version>v1.2</track_version>
+        <on_disc>1</on_disc>
+        <parental_advisory>false</parental_advisory>
+        <primary_artist>
+          <name>DJ Artist</name>
+        </primary_artist>
+        <additional_artists>
+          <artist>
+            <name>DJ Featured</name>
+            <primary_artist>false</primary_artist>
+          </artist>
+        </additional_artists>
+        <contributors>
+          <contributor>
+            <name>DJ Artist</name>
+            <role>Writer</role>
+          </contributor>
+        </contributors>
+        <publishers>
+          <publisher>
+            <publisher_name>Copyright Control</publisher_name>
+            <writer_name>DJ Artist</writer_name>
+          </publisher>
+        </publishers>
+        <resources>
+          <audio>
+            <file>
+              <name>81620519571_1_02.flac</name>
+              <size>3</size>
+            </file>
+          </audio>
+        </resources>
+        <recording_year>1984</recording_year>
+        <sequence_number>2</sequence_number>
+      </track>
+      <track>
+        <available_separately>true</available_separately>
+        <isrc_code>47282312905</isrc_code>
+        <language>EN</language>
+        <main_genre>Holy Buffalo Synth</main_genre>
+        <audio_locale>EN</audio_locale>
+        <name>Eat a donut</name>
+        <track_version>v1.5</track_version>
+        <on_disc>1</on_disc>
+        <parental_advisory>false</parental_advisory>
+        <primary_artist>
+          <name>DJ Artist</name>
+        </primary_artist>
+        <additional_artists>
+          <artist>
+            <name>DJ Featured</name>
+            <primary_artist>false</primary_artist>
+          </artist>
+          <artist>
+            <name>DJ Other Primary</name>
+            <primary_artist>true</primary_artist>
+          </artist>
+        </additional_artists>
+        <contributors>
+          <contributor>
+            <name>DJ Artist</name>
+            <role>Writer</role>
+          </contributor>
+        </contributors>
+        <publishers>
+          <publisher>
+            <publisher_name>Copyright Control</publisher_name>
+            <writer_name>DJ Artist</writer_name>
+          </publisher>
+        </publishers>
+        <resources>
+          <audio>
+            <file>
+              <name>81620519571_1_03.flac</name>
+              <size>3</size>
+            </file>
+          </audio>
+        </resources>
+        <recording_year>1984</recording_year>
+        <sequence_number>3</sequence_number>
+      </track>
+    </tracks>
+    <upc_code>81620519571</upc_code>
+    <schedule>
+      <consumer_release_date>2015-06-10</consumer_release_date>
+      <deliver_by_default>true</deliver_by_default>
+      <activate>true</activate>
+      <exclusions>
+        <exclusion>
+          <organization>
+            <id>7851192</id>
+          </organization>
+        </exclusion>
+      </exclusions>
+      <deliveries/>
+    </schedule>
+  </album>
+</ingestion>

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 109002829,
+        "dsp": {
+            "id": 123,
+            "name": "Spotify"
+        },
+        "date": "2019-11-02T21:52:48",
+        "action": "INSERT",
+        "state": "DELIVERED",
+        "ddexBatchId": null,
+        "user": {
+            "id": 1704070603,
+            "name": "marcos fuentes",
+            "label": "Marcos Fuentes"
+        },
+        "product": {
+            "id": 100,
+            "name": "Test Name"
+        }
+    },
+    {
+        "id": 108370829,
+        "dsp": {
+            "id": 123,
+            "name": "Spotify"
+        },
+        "date": "2019-10-30T19:50:43",
+        "action": "INSERT",
+        "state": "PROCESSING",
+        "ddexBatchId": null,
+        "user": {
+            "id": 1704070603,
+            "name": "marcos fuentes",
+            "label": "Marcos Fuentes"
+        },
+        "product": {
+            "id": 100,
+            "name": "Test Name"
+        }
+    }
+]

@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store apple-music{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-apple-music.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Apple Music</h4>
+	Using our Amuse app you can easily upload your music to Apple Music. Because Apple Music is a default store when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About Apple Music</h5>
+	<p>Apple Music is a music-streaming service, developed by Apple Inc. Users select music to stream to their device on-demand, or they can listen to existing, curated playlists. Apple Music also includes the Internet radio station Beats 1, that broadcasts live to over 100 countries. Apple Music provides music recommendations based on a user's taste. Apple Music has launched in over 100 countries and is currently ranked as the second largest music subscription service in the world.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="http://www.apple.com/music/">Apple Music</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>113</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

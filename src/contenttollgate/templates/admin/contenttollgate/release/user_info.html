@@ -1,0 +1,91 @@
+{% for user_type, user in users.items %}
+  <div class="col form-box">
+    <div class="rounded-2 bg-white border p-2">
+      <h5 class="p-2 mb-0">
+        <i class="bi bi-person-square me-2"></i>
+        {% if user_type == 'owner' %}
+          Owner
+          {% if main_artist.audiomack_id %}
+            <i class="bi bi-activity release-userinfo-audiomack-icon" data-toggle="tooltip" title="Audiomack enabled"></i>
+          {% endif %}
+          {% if main_artist.spotify_for_artists_url %}
+            <i class="bi bi-spotify release-userinfo-spotify-icon" data-toggle="tooltip" title="Spotify for Artists enabled"></i>
+          {% endif %}
+        {% elif user_type == 'creator' %}
+          Submitted by
+        {% endif %}
+      </h5>
+      <div class="container user-info-container">
+        <div class="row">
+          <div class="user-info">
+            <a href="{% url 'admin:users_user_change' user.model.pk %}" class="user-info" target="_blank">
+              👤 {{ user.model.first_name }} {{ user.model.last_name }}
+            </a> •
+            {% if user_type == 'owner' %}
+              🎤 {{ main_artist|escape }} •
+            {% endif %}
+            💌 {{ user.model.email }} •
+            🌏 {{ user.model.country }} •
+            📱 {{ user.display_country }} •
+            {{ user.model.category|get_user_category_symbol }} {{ user.model.get_category_display }} •
+            {% if user.tier == 2 %}
+                💸 Pro
+            {% elif user.tier == 1 %}
+                ➕ Boost
+            {% else %}
+                💁🏼‍ Start
+            {% endif %}
+          </div>
+        </div>
+        <div class="row user-links">
+          <a href="{% url 'admin:users_user_changelist' %}?phone={{user.phone.number|urlencode}}"
+             class="user-info {% if user.phone.flagged %}userinfo-warning{% endif %}" target="_blank">
+            📞 {{ user.phone.number }} ({{ user.phone.uses }})
+          </a>
+          <a href="{% url 'admin:contenttollgate_genericrelease_changelist' %}?user_id={{user.model.pk}}" class="user-info" target="_blank">
+            💿 Releases (Total: {{ user.release_counters.total }}, Released/Delivered: {{ user.release_counters.delivered }})
+          </a>
+          {% if user.model.zendesk_id %}
+            <a href="{{ user.model.get_zendesk_url }}" class="user-info" target="_blank">♿️ Zendesk</a>
+          {% endif %}
+          <a href="{{ user.model.get_mandrill_url }}" class="user-info" target="_blank">📥 Mandrill</a>
+          {% if user_type == 'owner' %}
+            {% if release.main_primary_artist.spotify_for_artists_url %}
+              🔗 S4A
+            {% else %}
+              ✖️ No S4A
+            {% endif %}
+            {% if release.main_primary_artist.audiomack_id %}
+              🔗 Audiomack
+            {% else %}
+              ✖️ No Audiomack
+            {% endif %}
+          {% endif %}
+          <a href="https://lildata.amuse.io/user/{{ user.model.id }}" class="user-info" target="_blank">📈 Lil'data</a>
+        </div>
+        {% if user.flagged and user.model.get_flagged_reason %}
+          <div class="row">
+            <div>
+              <label>Flagged:</label>
+              <b class="userinfo-warning">
+                {{ user.model.get_flagged_reason }}
+              </b>
+            </div>
+          </div>
+        {% endif %}
+        <div class="row">
+          {% if user_type == 'owner' and user.model.comments %}
+              <label>Comments:</label>
+              <div class="user-comment-container">
+                <textarea class="form-control user-comments" rows="{{ user.model.comments.text | calculate_comment_box_lines }}" readonly>{{ user.model.comments.text }}</textarea>
+              </div>
+          {% elif user_type == 'creator' %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+{% if users.items|length == 1 %}
+  <div class="col"></div>
+{% endif %}

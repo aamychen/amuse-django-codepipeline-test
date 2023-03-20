@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Configuration>
+	<Version>16</Version>
+	<SignedValue>858BFAF60B8820F1C9C2FFBBF62ED2344A70FAA3</SignedValue>
+	<SignedVersion>1</SignedVersion>
+	<AppName>TestAmuseCH</AppName>
+	<CustomerName>Amuse.io</CustomerName>
+	<CustomerID>jmS8rMp</CustomerID>
+	<DoRemoteLookups>TRUE</DoRemoteLookups>
+	<AllowIdentifyNowLookups>FALSE</AllowIdentifyNowLookups>
+	<Duration>600</Duration>
+	<HalfPrecision>TRUE</HalfPrecision>
+	<PutOnlyNormalizedFeaturesInUnknown>TRUE</PutOnlyNormalizedFeaturesInUnknown>
+	<AuthorizationRequired>FALSE</AuthorizationRequired>
+	<AuthorizationServerURL>none</AuthorizationServerURL>
+	<ServerURL>http://amuseio.sikeq2.net/amidservice.asvc</ServerURL>
+	<IDRequestVersion>3</IDRequestVersion>
+	<IDResponseVersion>12.12</IDResponseVersion>
+	<ReturnMostRecent>FALSE</ReturnMostRecent>
+	<SendServerControls>TRUE</SendServerControls>
+	<ComparisonDuration>20</ComparisonDuration>
+	<StopOnFirst>FALSE</StopOnFirst>
+	<LookupType>AllSubClips</LookupType>
+	<LookupHopSize>60</LookupHopSize>
+	<LookupWindow>600</LookupWindow>
+</Configuration>

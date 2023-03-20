@@ -1,0 +1,29 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store youtube{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-youtube.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on<br>YouTube & YouTube Red</h4>
+	Amuse lets you monetize your music on YouTube and YouTube Red using our app. Because they are both default stores when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About YouTube & YouTube Red</h5>
+	<p>YouTube is the world's largest video service with more than a billion monthly users. A lot of users use YouTube as their default music destination as it has both audio and video for free (ad funded). We can help artists make money from their music on YouTube, both on the artist channel and on other users channels by sending reference files to YouTube and the Content ID system. It’s a little bit different from other stores as this is more of a system for artists to take control of their music on this platform rather than selling it on a store.</p>
+	<br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.youtube.com">www.youtube.com</a>
+</div>
+<fieldset>
+	<legend>Available in (Youtube Red)</legend>
+	<h1>5</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

@@ -1,0 +1,346 @@
+.body-background {
+  background-color: #F1F1F1;
+}
+
+.userinfo-warning {
+  color: #ff0000;
+}
+
+.release-userinfo-spotify-icon, .release-userinfo-audiomack-icon {
+  font-size: 18px;
+  padding-left: 10px;
+  float: right;
+}
+
+.release-userinfo-spotify-icon {
+  color: #85ce85;
+}
+
+.release-userinfo-audiomack-icon {
+  color: #cebf85;
+}
+
+.audio-controls {
+  width:100%
+}
+
+.form-control.comments {
+  height:80px;
+  font-size:14px;
+}
+
+.navbar.comments {
+  padding: 0 0 2px 2px;
+  margin-left: 16.67%;
+  margin-right: 14px;
+}
+
+.assign-label {
+  font-size: 14px;
+}
+
+.song.isrc {
+  display:inline-flex;
+  align-items: center;
+}
+
+.release.upc {
+  display:inline-flex;
+  align-items: center;
+}
+
+.song-artist-name {
+  display:inline-flex;
+  align-items: center;
+}
+
+.comments-label {
+  font-size:12px;
+}
+
+.custom-select {
+  width:100%;
+  font-size:18px
+}
+
+.raw-id-field {
+  width:27%;
+}
+
+.bottom-padding {
+  margin-bottom:75px;
+}
+
+.form-container {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.footer-submit {
+  width: auto;
+}
+
+.row>* {
+  padding-right: calc(var(--bs-gutter-x) * .3);
+  padding-left: calc(var(--bs-gutter-x) * .3);
+}
+
+.form-box {
+  padding: 6px;
+}
+
+.form-box.sidebar {
+  padding-left: 12px;
+  height: -webkit-calc(100% - 55px);
+  height:    -moz-calc(100% - 55px);
+  height:         calc(100% - 55px);
+}
+
+.main-content {
+  margin-left: 16.67%;
+  position: absolute;
+  overflow: scroll;
+}
+
+.sidebar {
+  position: absolute;
+  overflow-y: scroll;
+}
+
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-btn {
+  padding: 2px 4px;
+  margin-left: 8px;
+}
+
+.save-btn, .next-btn {
+  width: 120px;
+  margin-top:2px;
+  margin-bottom: 2px;
+}
+
+.save-btn {
+  margin-right: 10px;
+}
+
+.assign-link, .track-link {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 0px;
+}
+
+.message-display {
+  padding: 0px 12px;
+}
+
+.alert {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.jarvis-logo {
+  color: #fae62d;
+  font-size: 24px;
+  margin-right: 30px;
+}
+
+.card-header {
+  padding: 0.25rem 1rem;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.warning-icon {
+  color: red;
+}
+
+.user-info {
+  text-decoration: none;
+}
+
+.user-links {
+  display: inline;
+}
+
+.user-info-container {
+  font-size: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.scrollable-col {
+  height: -webkit-calc(100% - 150px);
+  height:    -moz-calc(100% - 150px);
+  height:         calc(100% - 150px);
+}
+
+.release-artist-name {
+  display:inline-flex;
+  align-items: center;
+}
+
+.form-control {
+  padding: 0.375rem 0 0.375rem 0.45rem;
+}
+
+.form-select {
+  padding: 0.375rem 0.45rem;
+}
+
+label {
+  font-size: 14px;
+}
+
+.audio-file-btn {
+  padding: 0.1em 0.45em;
+  font-size: 14px;
+}
+
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: 10px;
+}
+
+.add-role-button, .advanced-settings-button {
+  padding: 0;
+  line-height: 0.5;
+  width: 100%;
+  border-color: #ced4da;
+}
+
+.yt-cid-btn {
+  padding: 2px 8px;
+}
+
+.info-and-status {
+  font-size: 14px;
+}
+
+.audio-match-result {
+  font-size: 28px;
+}
+
+.song-row, .release-row {
+  padding-bottom: 8px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  padding: 0.4rem 0.5rem;
+}
+
+.warning-type {
+  color: rgb(194, 33, 33);
+  font-weight: normal;
+}
+
+.apple-matches {
+  margin-left: 20px;
+}
+
+.analysis-warnings-container {
+  padding: 8px 8px;
+}
+
+.large-cover-art {
+  height: 88vh;
+  width: 88vh;
+  position: absolute;
+  margin-left: 16.3%;
+  z-index: 9999;
+}
+
+.support-release{
+  padding-top: 15px;
+}
+
+.release-status {
+  padding-top: 15px;
+  padding-left: 5px;
+}
+
+#id_release-status {
+  max-width: 180px;
+  font-size: 14px;
+}
+
+.acr-match-label, .icon-link, .acr-match-icon {
+  text-decoration: none;
+}
+
+.acr-table-header {
+  font-weight: 400;
+}
+
+.acr-artist {
+  display: inline;
+  color: #777777;
+}
+
+.bi-youtube {
+  color: #FF0000;
+}
+
+.bi-spotify {
+  color: #1ed760;
+}
+
+.bi-apple {
+  color: 	#555555;
+}
+
+.acr-match-info-card {
+  padding: 0 1rem;
+}
+
+.track-warnings-container {
+  margin-bottom: 8px;
+}
+
+.cover-art-size-warning{
+  color: red;
+  font-size: 18px;
+}
+
+ul#song-position-list {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+}
+
+ul#song-position-list li {
+  display: inline-block;
+}
+
+ul#song-position-list li:not(:last-child):after {
+  content: ", ";
+}
+
+.spotify-watchlist-warning {
+  background-color: #FF9191;
+}
+
+.user-comments {
+  font-size: 14px;
+  background-color: white !important;
+}
+
+#release-info-schedule-type {
+  border: 5px solid #A2C7D8;
+}
+
+#side-bar-schedule-type {
+  background-color: #A2C7D8;
+}

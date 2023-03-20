@@ -1,0 +1,238 @@
+<div class="alert alert-warning rounded-2 track-warnings-container border p-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-exclamation-diamond warning-icon"></i> Warnings </h5>
+  <div class="container form-container">
+    <div class="col-12">
+    <ul class="list-group list-group-flush">
+      {% for warning in songs|get_item:song_form.instance.id|get_item:'warnings' %}
+          {% if warning.trigger == 'ReleaseAppleEPF()' %}
+            <li class="list-group-item"><b class="warning-type">ISRC found on Apple Store</b> -  <b> {{ warning.isrc }}</b>
+              {% for match in warning.matches %}
+                <div class="apple-matches">
+                  Song: <b>{{ match.song.name }}</b><br>
+                  Artist: <b>{{ match.song.artist_display_name }}</b><br>
+                  Release: <b><a href="{{ match.collection.view_url }}" target="_blank">{{ match.collection.name }}</a></b><br>
+                  Provider: <b>{{ match.collection.content_provider_name }}</b><br>
+                </div>
+              {% endfor %}
+            </li>
+          {% elif warning.trigger == 'TrackAudioACRCloud()' %}
+            <li class="list-group-item">
+              <a data-bs-toggle="collapse" id="warnings-collapse-toggle-{{ warning.track_id }}" href="#collapse-acr-warnings-{{ warning.track_id }}" role="button" aria-expanded="false" aria-controls="collapse-acr-warnings-{{ warning.track_id }}" class="acr-match-label">
+              <b class="warning-type">Audio Content Matches</b>
+              {% if warning.contains_major_label_match %}
+                (Major Label Match)
+              {% endif %}
+              </a>
+              <div class="collapse multi-collapse" id="collapse-acr-warnings-{{ warning.track_id }}">
+                <div class="card">
+                  <div class="card-body p-1">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="py-0 acr-table-header">Title <br> <div class="acr-artist">Artist</div></th>
+                          <th scope="col" class="py-0 acr-table-header"><i>ISRC</i> <br> <div class="acr-artist">Label </div></th>
+                          <th scope="col" class="py-0 acr-table-header">Score</th>
+                          <th scope="col" class="py-0 acr-table-header">DSPs <br> <div class="acr-artist"> Distro </div></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for match in warning.acr_cloud_warning_matches %}
+                          {% if match.score >= 70 %}
+                            <tr
+                                {% if match.score > 75 and match.acr_cloud_results|length > 2 %}
+                                  style="background-color: #ff000078">
+                                {% elif match.score > 75 and match.acr_cloud_results|length > 1 %}
+                                  style="background-color: #ffda77bd">
+                                {% else %}
+                                  style="background-color: #a9a9a987">
+                                {% endif %}
+
+                              <td>
+                                {{ match.acr_cloud_results.0.title }}
+                                <br>
+                                <div class="acr-artist">
+                                  {% for artist in match.acr_cloud_results.0.artist_names %}
+                                    {{ artist }}
+                                  {% endfor %}
+                                </div>
+                              </td>
+                              <td>
+                                <i>{{ match.acr_cloud_results.0.isrc }}</i><br>
+                                <div class="acr-artist">{{ match.acr_cloud_results.0.result.label }}</div>
+                              </td>
+                              <td>
+                                {{ match.score }}
+                              </td>
+                              <td>
+                                {% if match.acr_cloud_results.0.spotify_track_uri %}
+                                  <a href="{{ match.acr_cloud_results.0.spotify_track_uri|generate_spotify_url_from_uri }}" class="icon-link" target="_blank">
+                                    <i class="bi bi-spotify"></i>
+                                  </a>
+                                {% endif %}
+                                {% if match.acr_cloud_results.0.youtube_video_id %}
+                                   <a href="https://www.youtube.com/watch?v={{ match.acr_cloud_results.0.youtube_video_id }}" class="icon-link" target="_blank">
+                                    <i class="bi bi-youtube"></i>
+                                  </a>
+                                {% endif %}
+                                {% if match.acr_cloud_results.0.apple_store_matches.0.collection.view_url %}
+                                  <a href="{{ match.acr_cloud_results.0.apple_store_matches.0.collection.view_url }}" class="icon-link" target="_blank">
+                                    <i class="bi bi-apple"></i>
+                                  </a>
+                                {% endif %}
+                                <br>
+                                                      <a data-bs-toggle="collapse" href="#collapse-acr-extra-info-{{ warning.track_id }}-{{ forloop.counter }}" role="button" aria-expanded="false" aria-controls="collapse-acr-extra-info-{{ warning.track_id }}-{{ forloop.counter }}"
+                                  {% if match.is_major_label_distributor %}
+                                    style="color: red"
+                                  {% endif %}
+                                >{{ match.distributor }}</a>
+                              </td>
+
+                            </tr>
+                            {% if match.acr_cloud_results.0.apple_store_matches.0.collection %}
+                            <tr class="collapse" id="collapse-acr-extra-info-{{ warning.track_id }}-{{ forloop.counter }}">
+                              <td colspan="4">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <div class="card">
+                                      <div class="card-header">
+                                        Track
+                                      </div>
+                                      <div class="card-body acr-match-info-card">
+                                        <table class="table">
+                                          <tr>
+                                            <th>Apple Id</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.song.song_id }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Name</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.song.name }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Display Artist</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.song.artist_display_name }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>ISRC</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.song.isrc }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Original Release Date</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.song.original_release_date.seconds | convert_datetime}}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>iTunes Release Date</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.song.itunes_release_date.seconds | convert_datetime}}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Copyright</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.song.copyright }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Duration</th>
+                                            <td>{{ match | get_track_duration }}</td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="card">
+                                      <div class="card-header">
+                                        Release
+                                      </div>
+                                      <div class="card-body acr-match-info-card">
+                                        <table class="table">
+                                          <tr>
+                                            <th>Apple Id</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.collection_id }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Name</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.name }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Display Artist</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.artist_display_name }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>UPC</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.upc }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Genre</th>
+                                            <td>
+                                              {% for genre in match.acr_cloud_results.0.apple_store_matches.0.collection.collection_genres %}
+                                                {{ genre.name }}
+                                              {% endfor %}
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th>Label Studio</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.label_studio }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Original Release Date</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.original_release_date.seconds | convert_datetime}}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>iTunes Release Date</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.itunes_release_date.seconds | convert_datetime}}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Content Provider</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.content_provider_name }}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Copyright</th>
+                                            <td>{{ match.acr_cloud_results.0.apple_store_matches.0.collection.copyright }}</td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {% elif warning.trigger == 'Profanity()' and songs|show_profanity_warning:warning%}
+            <li class="list-group-item"><b class="warning-type">Profanity Warning</b>
+              {{ warning.property}} <i> {{ warning.value }}</i> matches:
+              {% for match in warning.matches %}
+                {{ match }}
+              {% endfor %}
+            </li>
+
+          {% elif warning.trigger == 'TrackAudioSilenceDetect()' %}
+            <li class="list-group-item"><b class="warning-type">Silence detected </b>
+              {{ warning.warning_label }}
+            </li>
+
+          {% elif warning.trigger == 'ReleaseSuspectMetadata()' %}
+            <li class="list-group-item"><b class="warning-type">Suspect metadata</b>
+              {{ warning.property }} <b>{{ warning.value }}</b> matches
+              {% for match in warning.matches %}
+              <i>"{{ match }}"</i>
+              {% endfor %}
+            </li>
+
+          {% elif warning.trigger == 'ReleaseAmuseWatchlist()' %}
+             <li class="list-group-item"><b class="warning-type">Amuse Watchlist</b>
+                match for artist <b> {{ warning.watchlist_artist_name }}</b> (<i>{{ warning.watchlist_artist_monthly_listeners}} monthly listeners</i>)
+                {% if warning.watchlist_artist_uri %}
+                  <a href="{{ warning.watchlist_artist_uri|generate_spotify_url_from_uri }}" target="_blank"><i class="bi bi-spotify"></i></a>
+                {% endif %}
+              </li>
+          {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

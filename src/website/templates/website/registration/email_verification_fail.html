@@ -1,0 +1,12 @@
+{% extends "website/simple.html" %}
+{% load i18n %}
+
+{% block title %}
+	{% trans "Email verification failed" %} | {{ block.super }}
+{% endblock %}
+
+{% block content %}
+		<p>{% trans "Your email could not be verified." %}</p>
+		<p>{% trans "This is most likely because you have already verified the email in which case you need to pull and refresh the app to update your profile to see that it is verified." %}
+{% endblock %}
+

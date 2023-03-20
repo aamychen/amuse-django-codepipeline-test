@@ -1,0 +1,82 @@
+[
+    {
+        "id": 424089547,
+        "dsp": {
+            "id": 20799134,
+            "name": "Anghami"
+        },
+        "date": "2022-03-10T14:54:48",
+        "action": "TAKEDOWN",
+        "state": "DELIVERED",
+        "ddexBatchId": "20220310145441973",
+        "user": {
+            "id": 92130,
+            "name": "bulk_admin",
+            "label": "Bulk Admin"
+        },
+        "product": {
+            "id": 2165610288,
+            "name": "Test Name"
+        }
+    },
+    {
+        "id": 424086630,
+        "dsp": {
+            "id": 20799134,
+            "name": "Anghami"
+        },
+        "date": "2022-03-10T14:52:03",
+        "action": "TAKEDOWN",
+        "state": "PROCESSING",
+        "ddexBatchId": null,
+        "user": {
+            "id": 92130,
+            "name": "bulk_admin",
+            "label": "Bulk Admin"
+        },
+        "product": {
+            "id": 2165610288,
+            "name": "Test Name"
+        }
+    },
+    {
+        "id": 109002829,
+        "dsp": {
+            "id": 20799134,
+            "name": "Anghami"
+        },
+        "date": "2019-11-02T21:52:48",
+        "action": "INSERT",
+        "state": "DELIVERED",
+        "ddexBatchId": null,
+        "user": {
+            "id": 1704070603,
+            "name": "marcos fuentes",
+            "label": "Marcos Fuentes"
+        },
+        "product": {
+            "id": 2165610288,
+            "name": "Test Name"
+        }
+    },
+    {
+        "id": 108370829,
+        "dsp": {
+            "id": 20799134,
+            "name": "Anghami"
+        },
+        "date": "2019-10-30T19:50:43",
+        "action": "INSERT",
+        "state": "PROCESSING",
+        "ddexBatchId": null,
+        "user": {
+            "id": 1704070603,
+            "name": "marcos fuentes",
+            "label": "Marcos Fuentes"
+        },
+        "product": {
+            "id": 2165610288,
+            "name": "Test Name"
+        }
+    }
+]

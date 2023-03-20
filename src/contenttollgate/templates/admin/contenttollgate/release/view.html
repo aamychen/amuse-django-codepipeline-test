@@ -1,0 +1,78 @@
+{% extends "admin/contenttollgate/release/base.html" %}
+{% load admin_urls static admin_modify %}
+
+{% block title %}<title>{{ release_form.name.value }}</title>{% endblock %}
+
+{% block content %}
+<div class="card bg-dark text-white mb-2">
+  <div class="card-header">
+    <div class="row">
+      <div class="col">
+        {% include "admin/contenttollgate/release/breadcrumbs.html" %}
+      </div>
+    </div>
+  </div>
+</div>
+{% url opts|admin_urlname:'enable_yt_content_id' release.pk|admin_urlquote as enable_monetization_url %}
+<form action="{% add_preserved_filters enable_monetization_url %}" method="POST" id="enable_monetization_form">{% csrf_token %}</form>
+{% url opts|admin_urlname:'disable_yt_content_id' release.pk|admin_urlquote as disable_monetization_url %}
+<form action="{% add_preserved_filters disable_monetization_url %}" method="POST" id="disable_monetization_form">{% csrf_token %}</form>
+<form action="{% url opts|admin_urlname:'assign' release.id  %}" method="POST" id="assign_form">{% csrf_token %}</form>
+<form action="{% url opts|admin_urlname:'view' release.id  %}" id="release_form" method="POST" enctype=multipart/form-data novalidate>
+{% csrf_token %}
+  <div class="container-fluid">
+    <img src="{{ release.cover_art.file.url }}" id="large-cover-art" class="large-cover-art" style="display: none;" >
+    <div class="row">
+      <div class="col-sm-2 form-box sidebar overflow-auto">
+        {% include "admin/contenttollgate/release/sidebar.html" %}
+        <div class="bottom-padding"></div>
+      </div>
+      <div class="col-10 main-content scrollable-col overflow-auto">
+        <div class="row message-display">
+          {% if messages %}
+              <div class="col alert {{ alert_tag }}" role="alert">
+                <ul class="messages">
+                {% for message in messages %}
+                  <li> {{ message }} </li>
+                {% endfor %}
+                </ul>
+              </div>
+          {% endif %}
+        </div>
+        <div class="row">
+          {% include "admin/contenttollgate/release/user_info.html" %}
+        </div>
+        <div class="row">
+          <div class="col-12">
+            {% include "admin/contenttollgate/release/warnings.html" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-box">
+            {% include "admin/contenttollgate/release/release_info.html" %}
+          </div>
+          <div class="col form-box">
+            {% include "admin/contenttollgate/release/release_error_flags.html" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-box">
+            {% include "admin/contenttollgate/release/release_artists.html" %}
+          </div>
+          <div class="col form-box">
+          </div>
+        </div>
+        <hr>
+        {{ song_formset.management_form }}
+        {% for song_form in song_formset %}
+          {% include "admin/contenttollgate/release/song_info.html" %}
+        {% endfor %}
+        <div class="bottom-padding"></div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar comments fixed-bottom navbar-light bg-light rounded">
+    {% include "admin/contenttollgate/release/footer.html" %}
+  </nav>
+</form>
+{% endblock %}

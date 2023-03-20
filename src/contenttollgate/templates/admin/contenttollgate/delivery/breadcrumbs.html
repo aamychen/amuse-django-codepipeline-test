@@ -1,0 +1,17 @@
+{% load admin_urls static admin_modify %}
+<nav class="navbar navbar-light" aria-label="breadcrumb">
+  <div class="d-flex justify-content-start">
+    <a class="text-decoration-none jarvis-logo" href="{% url 'admin:index' %}" style="color: #fae62d;font-size: 24px;margin-right: 30px;">JARVI5</a>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="text-decoration-none text-secondary" href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a></li>
+      <li class="breadcrumb-item"><a class="text-decoration-none text-secondary" href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a></li>
+      <li class="breadcrumb-item"><a class="text-decoration-none text-secondary" href="{% url opts|admin_urlname:'view' release.pk %}">{{ release|truncatewords:"18" }}</a></li>
+    </ol>
+  </div>
+  <div class="d-flex justify-content-end">
+    {% url 'admin:contenttollgate_genericrelease_history' release.pk|admin_urlquote as history_url %}
+    <form action="{% add_preserved_filters history_url %}" target="_blank">
+      <input type="submit" class="btn btn-secondary navbar-btn" value="History" />
+    </form>
+  </div>
+</nav>

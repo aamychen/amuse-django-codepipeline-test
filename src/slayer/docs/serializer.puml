@@ -1,0 +1,8 @@
+@startuml
+!theme vibrant
+hide members
+View *--- "1" ViewSerializer
+ViewSerializer o--- "1..*" EnrichmentSerializer
+ViewSerializer o--- "1" DataclassSerializer
+DataclassSerializer *--- "1" PyslayerDataclass
+@enduml

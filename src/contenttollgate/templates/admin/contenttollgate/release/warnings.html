@@ -1,0 +1,37 @@
+{% if release.has_invalid_artist_roles %}
+<div class="alert alert-danger">Primary/Featured cannot share same artist ID on
+  track. Remove duplicate artist/s from tracks before delivery!</div>
+{% endif %}
+
+{% if release.has_locked_splits %}
+<div class="alert alert-danger">
+  This release has tracks that are in active FFWD deals and splits are locked.
+  Do not take down this release without approval from your teamlead!
+</div>
+{% endif %}
+
+{% if release.user.has_locked_splits %}
+<div class="alert alert-danger">
+  This user is in an active ffwd agreement with another release. do not take down this release without approval from your team lead.
+</div>
+{% endif %}
+
+{% if release.has_licensed_tracks %}
+<div class="alert alert-danger">
+  This release has licensed tracks. Do not take down this release without approval from your teamlead!
+</div>
+{% endif %}
+
+{% if analysis_results and analysis_results.has_warning %}
+  <div class="alert alert-warning analysis-warnings-container">
+    <ul class="list-group list-group-flush">
+      {% include "admin/contenttollgate/release/warnings/spotify_watchlist_warnings.html" %}
+      {% include "admin/contenttollgate/release/warnings/amuse_watchlist_warnings.html" %}
+      {% include "admin/contenttollgate/release/warnings/profanity_warnings.html" %}
+      {% include "admin/contenttollgate/release/warnings/apple_store_warnings.html" %}
+      {% include "admin/contenttollgate/release/warnings/suspect_metadata_warnings.html" %}
+      {% include "admin/contenttollgate/release/warnings/silence_detection_warnings.html" %}
+      {% include "admin/contenttollgate/release/warnings/audio_content_match_warnings.html" %}
+    </ul>
+  </div>
+{% endif %}

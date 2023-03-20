@@ -1,0 +1,128 @@
+{
+    "product": [
+        {
+            "acquisition": {"acquisition_type": "LICENSE", "id": 1491372013},
+            "added_date": "2018-06-20T10:13:39",
+            "album_notes": "",
+            "alternate_genre": null,
+            "alternate_subgenre": null,
+            "artists": [{"id": 1459380861, "name": "John Doe", "primary": true}],
+            "artwork": [
+                {
+                    "image": {
+                        "created_date": "2018-06-20T10:13:39",
+                        "has_uploaded": false,
+                        "id": 1491371967,
+                        "modified_date": "2019-12-30T18:46:33",
+                        "original_filename": "0714583582432.jpg",
+                        "resolution_height": 2048,
+                        "resolution_width": 2048,
+                        "vault_hook": "4e303c0ed716a5f5b25ab0298e048850.jpg"
+                    }
+                }
+            ],
+            "assets": [
+                {
+                    "artists": [
+                        {"id": 1459380861, "name": "John Doe", "primary": true}
+                    ],
+                    "asset_version": "",
+                    "audio": {
+                        "created_date": "2018-06-20T10:13:40",
+                        "has_uploaded": true,
+                        "id": 1491371976,
+                        "modified_date": "2019-12-30T18:46:36",
+                        "original_filename": "0714583582432_1_01.flac",
+                        "vault_hook": "8233273c83230aefbe398107287ba0dc.flac"
+                    },
+                    "display_artist": "John Doe",
+                    "duration": 365,
+                    "genre": {"id": "ELECTRONIC", "name": "Electronic"},
+                    "id": 1491371975,
+                    "isrc": "QM2PV1554484",
+                    "name": "John Doe",
+                    "parental_advisory": "NO",
+                    "required_fields": [],
+                    "sequence": 1,
+                    "type": "TRACK",
+                    "video": {"has_uploaded": false},
+                    "volume": 1
+                },
+                {
+                    "artists": [
+                        {"id": 1459380861, "name": "Volkor X", "primary": true}
+                    ],
+                    "asset_version": "",
+                    "audio": {
+                        "created_date": "2018-06-20T10:13:40",
+                        "has_uploaded": true,
+                        "id": 1491371992,
+                        "modified_date": "2018-06-20T10:13:55",
+                        "original_filename": "0714583582432_1_02.flac",
+                        "vault_hook": "a16e51a31bafa0cb556f1141c59a3454.flac"
+                    },
+                    "display_artist": "John Doe",
+                    "duration": 350,
+                    "genre": {"id": "ELECTRONIC", "name": "Electronic"},
+                    "id": 1491371990,
+                    "isrc": "QM2PV1554485",
+                    "name": "John Doe",
+                    "parental_advisory": "NO",
+                    "required_fields": [],
+                    "sequence": 2,
+                    "type": "TRACK",
+                    "video": {"has_uploaded": false},
+                    "volume": 1
+                }
+            ],
+            "c_line_text": "Records",
+            "c_line_year": 2019,
+            "catalog_number": "79701",
+            "catalog_tier": "FRONT",
+            "compilation": false,
+            "consumer_release_date": "2018-06-27T00:00:00",
+            "consumer_release_time": null,
+            "cover_image": {
+                "created_date": "2018-06-20T10:13:39",
+                "has_uploaded": true,
+                "id": 1491371967,
+                "modified_date": "2019-12-30T18:46:33",
+                "original_filename": "0714583582432.jpg",
+                "resolution_height": 2048,
+                "resolution_width": 2048,
+                "vault_hook": "4e303c0ed716a5f5b25ab0298e048850.jpg"
+            },
+            "created_date": "2018-06-20T10:13:39",
+            "display_artist": "John Doe",
+            "genre": {"id": "ELECTRONIC", "name": "Electronic"},
+            "id": 1491371962,
+            "label": {"id": 1459380905, "name": "Records"},
+            "label_copy_info": null,
+            "language": "EN",
+            "last_review_item": null,
+            "mastered_for_itunes": false,
+            "modified_date": "2021-08-26T10:23:44",
+            "name": "John Doe",
+            "organization": {"id": 1142770615, "name": "Amuseio AB"},
+            "original_release_date": "2018-06-27T00:00:00",
+            "p_line_text": "Records",
+            "p_line_year": 2019,
+            "parental_advisory": false,
+            "preorder_date": null,
+            "product_type": "AUDIO_PRODUCT",
+            "recording_location": "",
+            "recording_year": null,
+            "release_format_type": "SINGLE",
+            "release_version": "",
+            "required_fields": [],
+            "state": "DELIVERED",
+            "subgenre": null,
+            "suborg_state": null,
+            "tags": [{"hidden": false, "id": 2165119954, "name": "Qualified batch"}],
+            "territories": [],
+            "total_assets": 2,
+            "total_volumes": 1,
+            "upc": "0714583582432"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{% extends "admin/contenttollgate/delivery/base.html" %}
+{% load admin_urls static admin_modify %}
+
+{% block title %}<title>New Delivery Page - {{ release.name}} - {{ release.id }}</title>{% endblock %}
+
+{% block content %}
+<div class="card bg-dark text-white mb-2">
+  <div class="card-header">
+    <div class="row">
+      <div class="col">
+        {% include "admin/contenttollgate/delivery/breadcrumbs.html" %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      {% include "admin/contenttollgate/delivery/info_and_status.html" %}
+    </div>
+    <div class="col-10">
+      {% include "admin/contenttollgate/delivery/warnings.html" %}
+      <form action="{% url opts|admin_urlname:'direct_deliver' release.pk %}" method="post" novalidate>
+        {% csrf_token %}
+        <div class="row">
+          <div class="col">
+            {% include "admin/contenttollgate/delivery/user_info.html" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            {% include "admin/contenttollgate/delivery/deliver_all_stores.html" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            {% include "admin/contenttollgate/delivery/deliver_direct_stores.html" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            {% include "admin/contenttollgate/delivery/deliver_fuga_stores.html" %}
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

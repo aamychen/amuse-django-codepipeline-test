@@ -1,0 +1,61 @@
+<h2>Adyen Notification</h2>
+
+<p>{{ code }}{% if reason %} - {{ reason }}{% endif %}, received at {{ received_time }}</p>
+
+<h3>Amuse User</h3>
+<dl>
+  <dt>Name</dt>
+  <dd>{{ user.name }}</dd>
+  <dt>Email</dt>
+  <dd>{{ user.email }}</dd>
+  <dt>Created</dt>
+  <dd>{{ user.created|date:"c" }}</dd>
+  <dt>Jarvi5 URL</dt>
+  <dd>{{ user_admin_url }}</dd>
+</dl>
+
+<h3>Amuse Subscription</h3>
+{% if subscription %}
+<dl>
+  <dt>Status</dt>
+  <dd>{{ subscription.get_status_display }}</dd>
+  <dt>Plan</dt>
+  <dd>{{ subscription.plan.name }}</dd>
+  <dt>Valid From</dt>
+  <dd>{{ subscription.valid_from }}</dd>
+  <dt>Paid Until</dt>
+  <dd>{{ subscription.paid_until }}</dd>
+  <dt>Successful Payments Count</dt>
+  <dd>{{ subscription_payments_count }}</dd>
+  <dt>Jarvi5 URL</dt>
+  <dd>{{ subscription_admin_url }}</dd>
+
+</dl>
+{% else %}
+<p>PRO subscription information not available in Jarvi5</p>
+{% endif %}
+
+<h3>Amuse Payment Transaction</h3>
+{% if payment %}
+<dl>
+  <dt>Status</dt>
+  <dd>{{ payment.get_status_display }}</dd>
+  <dt>Amount ({{ payment.currency }})</dt>
+  <dd>{{ payment.amount }}</dd>
+  <dt>Country</dt>
+  <dd>{{ payment.country.code }}</dd>
+  <dt>Created</dt>
+  <dd>{{ payment.created|date:"c" }}</dd>
+  <dt>Jarvi5 URL</dt>
+  <dd>{{ payment_admin_url }}</dd>
+  <dt>Adyen URL</dt>
+  <dd>{{ payment.external_url }}</dd>
+</dl>
+{% else %}
+<p>Not available in Jarvi5</p>
+{% endif %}
+
+<h3>Raw Adyen Data</h3>
+<pre>
+  {{ adyen_data }}
+</pre>

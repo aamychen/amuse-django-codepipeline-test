@@ -1,0 +1,27 @@
+{% with has_multiple_warnings=analysis_results.acr_cloud_warnings|has_multiple_warnings  %}
+  {% if has_multiple_warnings %}
+    <li class="list-group-item">
+      <b class="warning-type">Audio Content Matches</b>
+      in songs:
+      <ul id="song-position-list">
+        {% for warning in analysis_results.acr_cloud_warnings %}
+          {% if warning.show_warning %}
+            <li><a id="acr-warning-{{ warning.track_id }}" href="#{{ warning.track_id }}">{{ songs|get_song_sequence:warning.track_id }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% else %}
+    {% for warning in analysis_results.acr_cloud_warnings %}
+      {% if warning.show_warning %}
+        <li class="list-group-item">
+          <b class="warning-type">Audio Content Matches</b>
+          in song {{ songs|get_song_sequence:warning.track_id }}
+          <a id="acr-warning-{{ warning.track_id }}" href="#{{ warning.track_id }}" class="bi bi-box-arrow-up-right"></a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+

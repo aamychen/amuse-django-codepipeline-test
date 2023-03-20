@@ -1,0 +1,18 @@
+{
+    "searchResults": [
+        {
+            "uri": "spotify:album:album_id",
+            "name": "name",
+            "type": "EP",
+            "originalReleaseDate": "2022-11-22",
+            "artistName": "artistName",
+            "licensorName": "Amuseio AB",
+            "labelName": "labelName",
+            "upc": "7316111222333",
+            "ean": "",
+            "feedName": "amuseio",
+            "titleVersion": "",
+            "deliveryStatus": "Succeeded"
+        }
+    ]
+}

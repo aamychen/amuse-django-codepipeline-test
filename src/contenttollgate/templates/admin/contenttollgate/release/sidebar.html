@@ -1,0 +1,95 @@
+<div class="py-2 bg-white bg-gradient border rounded-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-vinyl-fill me-2"></i>
+    {{ release.name }} <small class="text-muted">{{ release.id }}</small>
+  </h5>
+<a href="{{ release.cover_art.file.url }}" target="_blank">
+<img src="{{ release.cover_art.file.url_800x800 }}" id="cover-art" class="img-fluid rounded-2 mx-auto d-block border border-5">
+</a>
+    <table class="table table-bordered">
+    <tr>
+      <td>
+        {% if coverart.width != coverart.height or coverart.height < 1400 or coverart.height > 6000%}
+          <label>Size: <b class="cover-art-size-warning">⚠️️ {{ coverart.width }} x {{ coverart.height }} ⚠️</b>️</label>
+        {% else %}
+          <label>Size: {{ coverart.width }} x {{ coverart.height }}</label>
+        {% endif %}
+      </td>
+    </tr>
+    <tr>
+      <td>{{ coverart_form.file }}</td>
+    </tr>
+  </table>
+</div>
+<div class="rounded-2 bg-white border p-2 mt-2">
+  <table class="table table-bordered info-and-status">
+    <tr>
+      <th>UPC</th>
+      <td>{{ release.upc_code }}</td>
+    </tr>
+    <tr>
+      <th>Release Date</th>
+      <td>{{ release.release_date|date:"Y-m-d" }}</td>
+    </tr>
+    <tr>
+      <th>Schedule type</th>
+      {% if release.schedule_type == 2%}
+          <td id="side-bar-schedule-type">{{ release.get_schedule_type_display }}
+          </td>
+        {% else %}
+          <td>{{ release.get_schedule_type_display }}
+          </td>
+        {% endif %}
+    </tr>
+    <tr>
+      <th>Status</th>
+      <td id="release-status-sidebar">{{ release.get_status_display }}</td>
+    </tr>
+  </table>
+</div>
+<div class="rounded-2 bg-white border p-2 mt-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-music-note-beamed me-2"></i>Songs</h5>
+    <div class="col">
+      {% for song in songs %}
+        <div class="row">
+          <div>&nbsp; {{ forloop.counter }}. {{ songs|get_item:song|get_item:'name'}} <a href="#{{ song }}" class="bi bi-box-arrow-up-right track-link">
+            {% if song in analysis_results.tracks_with_critical_warnings %}
+              <i class="bi bi-exclamation-diamond warning-icon"></i>
+            {% endif %}
+          </a></div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+<div class="form-container rounded-2 bg-white border p-2 mt-2">
+  <div class="col">
+    <div class="row">
+      <h5 class="pt-2 ps-3"><i class="bi bi-shop-window me-2"></i>
+        Release Stores
+      </h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="release stores">
+        {{ release_form.stores }}
+    </div>
+    {% if release_form.stores.errors %}
+      <div class="alert alert-danger">{{ release_form.stores.errors }}</div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="form-container rounded-2 bg-white border p-2 mt-2">
+  <div class="col">
+    <div class="row">
+      <h5 class="pt-2 ps-3"><i class="bi bi-flag-fill me-2"></i>Excluded Countries</h5>
+    </div>
+    <div class="row">
+      <div class="release excluded_countries">
+        {{ release_form.excluded_countries }}
+      </div>
+      {% if release_form.excluded_countries.errors %}
+        <div class="alert alert-danger">{{ release_form.excluded_countries.errors }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>

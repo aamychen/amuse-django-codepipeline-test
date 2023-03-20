@@ -1,0 +1,69 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrahead %}
+  {{ block.super }}
+  {{ media }}
+  <script type="text/javascript"
+          src="{% static 'admin/js/cancel.js' %}"></script>
+  <script type="text/javascript"
+          src="{% static 'admin/js/calendar.js' %}"></script>
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-
+  {{ opts.model_name }} delete-confirmation{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans "Home" %}</a>
+    &rsaquo; <a
+          href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a
+          href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    &rsaquo; {% trans title %}
+  </div>
+{% endblock %}
+
+{% block content %}
+  <form method="post">{% csrf_token %}
+    <div>
+      <p><strong>Name:</strong> <a
+              href="{% url 'admin:users_user_change' subscription.user_id %}">{{ subscription.user.name }}</a>
+      </p>
+      <p><strong>Subscription:</strong>
+        <a href="{% url 'admin:subscriptions_subscription_change' subscription.pk %}">
+          {{ subscription }}
+        </a>
+      </p>
+    <p><strong>Paid until:</strong>
+      {{ subscription.paid_until }}
+    </p>
+      <p><strong>Defer date:</strong>
+        <input type="date" name="defer_date" value="{{ expiry_date_default }}" min="{{ expiry_date_min }}" max="{{ expiry_date_max }}"/>
+      </p>
+
+      <hr/>
+      <h2>Description</h2>
+      {% for line in description %}
+        <p>{{ line }}</p>
+      {% endfor %}
+      <div><strong style="background-color: #FAE62D; color: black; text-transform: uppercase;">This action is irreversible.</strong></div>
+      <hr/>
+      <p>Are you sure you want to proceed?</p>
+
+
+      <input type="hidden" name="_selected_action"
+             value="{{ subscription.pk }}"/>
+
+
+      <input type="hidden" name="confirm" value="yes"/>
+      <input type="hidden" name="action" value="{{ action_name }}"/>
+      {% if is_popup %}
+        <input type="hidden" name="{{ is_popup_var }}" value="1">{% endif %}
+      {% if to_field %}<input type="hidden" name="{{ to_field_var }}"
+                              value="{{ to_field }}">{% endif %}
+      <input type="submit" value="{% trans 'Yes, I’m sure' %}">
+      <a href="#" class="button cancel-link">{% trans "No, take me back" %}</a>
+    </div>
+  </form>
+{% endblock %}

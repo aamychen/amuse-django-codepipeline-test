@@ -1,0 +1,11 @@
+{% extends "website/simple.html" %}
+{% load i18n %}
+
+{% block title %}
+	{% trans "Withdrawal verified" %} | {{ block.super }}
+{% endblock %}
+
+{% block content %}
+		<p>{% trans "Your withdrawal has been verified." %}</p>
+{% endblock %}
+

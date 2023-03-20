@@ -1,0 +1,430 @@
+/*
+ ### Main
+ */
+#content,
+#content * {
+  box-sizing: border-box;
+}
+
+#content {
+  padding: 0 10px 52px 10px;
+  float: left;
+  width: 100%;
+}
+
+#content > h1 {
+  display: none;
+}
+
+#header {
+  display: none;
+}
+
+#footer {
+  padding: 0;
+}
+
+div.breadcrumbs {
+  padding: 2px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 200;
+}
+
+
+.object-tools {
+  position: absolute;
+  top: 29px;
+  right: 10px;
+  margin-top: 0;
+}
+
+br.clear {
+  display: none;
+  clear: none;
+}
+
+
+/*
+ ### Forms
+ */
+.form-row {
+  padding: 5px;
+}
+
+.form-row:last-of-type {
+  border: 0;
+}
+
+input[type=text],
+.vTextField {
+  border-radius: 0;
+  padding: 0 2px;
+  border-color: transparent;
+}
+
+input[type=text]:hover,
+.vTextField:hover {
+  border-color: #ccc;
+}
+
+input[type=text]:focus,
+.vTextField:focus {
+  outline: none;
+}
+
+.aligned label {
+  padding: 0 10px 0 0;
+  text-transform: uppercase;
+  min-width: 100px;
+  width: auto;
+}
+
+.aligned label.required {
+  padding: 0 10px 0 0;
+  text-transform: uppercase;
+  font-weight: normal !important;
+}
+
+.field-meta_flags label,
+.field-error_flags label,
+label.vCheckboxLabel {
+  text-transform: none;
+  position: relative;
+  font-weight: normal;
+
+}
+
+.field-meta_flags div > label,
+.field-error_flags div > label {
+  display: none;
+}
+
+form .aligned ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+select {
+  height: auto;
+  background: transparent;
+  padding: 0 2px;
+}
+
+select:hover {
+  border-color: #ccc;
+}
+
+.field-render_image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*
+ ### django overrides
+ */
+.module {
+  margin-bottom: 0;
+}
+
+
+.inline-group {
+  border-width: 0;
+}
+
+.inline-group h2:first-of-type {
+  background: transparent;
+  color: #000;
+  font-weight: normal;
+}
+
+.inline-related {
+  margin-bottom: 10px;
+}
+
+.inline-related:nth-child(odd) {
+  padding-left: 5px;
+}
+
+.inline-related:nth-child(even) {
+  padding-right: 5px;
+}
+
+.fixed-row {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px 10px 10px;
+}
+
+.submit-row [name=_addanother],
+.submit-row [name=_continue],
+.submit-row .deletelink-box {
+  display: none;
+}
+
+.submit-row {
+  margin: 0;
+}
+
+.submit-row .assigned-section {
+  float:left;
+}
+.submit-row .assigned-section .assigned-to {
+  margin-left:15px;
+}
+
+/*
+ ### Custom
+ */
+
+.field-get_user_info {
+  font-size: 12px;
+}
+
+.field-get_user_info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.field-get_user_info p {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.field-get_user_info .links a {
+  margin-right: 8px;
+}
+
+.symbol {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: sub;
+  margin-left: 8px;
+}
+
+.symbol:first-of-type {
+  margin-left: 0;
+}
+
+.cols {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+  .cols .col-1,
+  .cols .col-2,
+  .cols .col-3 {
+    float: left;
+    width: 30%;
+  }
+
+  .cols .col-1 {
+    max-width: 315px;
+  }
+
+  .cols .col-2 {
+    width: 70%;
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+
+  .cols .col-2.delivery {
+    width: 500px !important;
+  }
+  .cols .col-3 {
+    width: 35%;
+    padding-left: 20px;
+  }
+
+.cols table tr td {
+  vertical-align: middle;
+}
+
+.aligned .field-meta_flags ul li,
+.aligned .field-error_flags ul li {
+  display: inline-block;
+}
+
+.aligned p.file-upload {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.inline-related {
+  float: left;
+  width: 100%;
+}
+
+.form-row .fieldBox {
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+.form-row .fieldBox .vTextField {
+  width: auto;
+}
+
+.form-row .field-sequence {
+  width:25%;
+}
+.form-row .field-id {
+  width:25%;
+}
+.form-row .field-id label {
+  min-width:55px;
+  width:55px;
+}
+.form-row .field-id .readonly {
+  margin-left:0;
+  padding-top:3px;
+}
+
+.form-row .field-explicit {
+  width:25%;
+}
+.form-row .field-lyrics_analysis_result {
+  width:25%;
+}
+.form-row .field-lyrics_analysis_result label {
+  min-width:55px;
+  width:55px;
+}
+.form-row .field-lyrics_analysis_result .readonly {
+  margin-left:0;
+  padding-top:2px;
+}
+
+.inline-related h3 b,
+.inline-related h3 .inline_label {
+  display: none;
+}
+
+.inline-related h3 .delete {
+  display: block;
+}
+
+.field-countries.field-stores .fieldBox {
+  width: 50%;
+  margin-right: 0;
+}
+
+.field-countries.field-stores .fieldBox label {
+  display: block;
+  width: 100%;
+}
+
+.field-countries.field-stores .fieldBox p.help {
+  padding-left: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.platform-info h2 {
+  display: none;
+}
+
+#releaseartist_set-group .form-row .fieldBox {
+  width: auto;
+  padding-right: 10px;
+}
+
+#songs-group {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+#songs-group h2 {
+}
+
+.dynamic-songs {
+  width: 50%;
+  float: left;
+}
+
+.dynamic-songs .dynamic-songs {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.dynamic-songs h3 {
+  background-color: transparent;
+  border-top: 0;
+}
+
+.dynamic-songs b {
+  display: none;
+}
+
+.songs-nested-inline {
+  padding: 0;
+  margin: 0;
+}
+
+.songs-nested-inline h2 {
+  display: none;
+}
+
+.songs-nested-inline .add-row {
+  float: left;
+  width: 100%;
+}
+
+.cover-art .wrapper {
+  position: relative;
+  width: 50%;
+}
+
+.cover-art img {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 1px;
+}
+
+  .cover-art .info {
+    clear: both;
+    width: 100%;
+    font-size: 11px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 3px 5px;
+    letter-spacing: .2em;
+  }
+
+  .cover-art .error {
+    color: black;
+    background-color: red;
+  }
+
+
+  .cover-art .inline-group h2,
+  .cover-art .inline-group h3,
+  .cover-art .inline-group .form-row div > label {
+    display: none;
+  }
+
+  .cover-art .inline-group label {
+    text-transform: none;
+  }
+
+  .cover-art .inline-group ul {
+    padding: 0;
+    margin: 0;
+  }
+
+.success {
+  color: green;
+}
+.generic-link {
+  float: right;
+}

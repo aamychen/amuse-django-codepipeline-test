@@ -1,0 +1,30 @@
+{% load admin_urls static admin_modify %}
+<div class="rounded-2 bg-white border p-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-clipboard-x-fill me-2"></i>Error Flags</h5>
+  <div class="container form-container">
+    <div class="row">
+      <div class="col">
+      {% for error_flag in release_form.error_flags %}
+        {% if error_flag.data.value|starts_with:"artwork" %}
+          <div class="row">
+            <label for="{{ error_flag.id_for_label }}"><input type="checkbox" class="form-check-input" name="release-error_flags" value={{ error_flag.data.value }} class="form-check-input" id="{{ error_flag.id_for_label }}" {% if error_flag.data.value in selected_error_flags %}checked{% endif %}>
+              {{ error_flag.data.label }}
+            </label>
+          </div>
+        {% endif %}
+      {% endfor %}
+      </div>
+      <div class="col">
+      {% for error_flag in release_form.error_flags %}
+        {% if not error_flag.data.value|starts_with:"artwork" %}
+          <div class="row">
+            <label for="{{ error_flag.id_for_label }}"><input type="checkbox" class="form-check-input" name="release-error_flags" value={{ error_flag.data.value }} class="form-check-input" id="{{ error_flag.id_for_label }}" {% if error_flag.data.value in selected_error_flags %}checked{% endif %}>
+              {{ error_flag.data.label }}
+            </label>
+          </div>
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

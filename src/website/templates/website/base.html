@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}Amuse – The world's first mobile record company{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="{% static 'website/css/normalize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/amuse.css?c81e728d9d4c' %}">
+	<link rel="icon" type="image/png" href="{% static 'website/img/favicon.png' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body class="{% block body_class %}{% endblock %}">
+	<nav>
+		{% block menu-section %}
+		<a href="/">amuse</a>
+		<ul>
+			<a class="{% block howdoesitwork_menu %}{% endblock %}" href="/how-does-it-work/"><li>How does it work?</li></a>
+			<a class="{% block testimonials_menu %}{% endblock %}" href="/testimonials/"><li>Testimonials</li></a>
+			<a class="{% block stores_menu %}{% endblock %}" href="/stores/"><li>Stores</li></a>
+			<a class="{% block about_menu %}{% endblock %}" href="/about/"><li>About Amuse</li></a>
+			<a class="{% block contact_menu %}{% endblock %}" href="/contact/"><li>Contact us</li></a>
+		</ul>
+		<div>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div><script>
+			$(document).ready(function(){
+				$('nav>div').click(function(){
+					$(this).toggleClass('open');
+					if ($(this).hasClass('open')) {
+						$('nav>ul').slideDown();
+					} else {
+						$('nav>ul').slideUp();
+					}
+				});
+			});
+		</script>
+		{% endblock %}
+	</nav>
+	<header>
+		{% block header-section %}{% endblock %}
+	</header>
+	<main>
+		{% block main-section %}{% endblock %}
+	</main>
+	<aside>
+		{% block download-section %}
+		<h5>Download Amuse now to get started!</h5>
+		<div>
+			<br />
+			<a href="http://bit.ly/download-amuse"><img src="{% static 'website/img/app-store-btn.png' %}" alt="Download Amuse on the App Store" /></a>
+			<a href="https://play.google.com/store/apps/details?id=io.amuse.android"><img src="{% static 'website/img/google-play-btn.png' %}" alt="Download Amuse on Google Play" /></a>
+		</div>
+		{% endblock %}
+	</aside>
+	<section>
+		{% block subscribe-section %}
+		<form class="mc-form group">
+		<div>
+			Subscribe to our newsletter!
+				<input placeholder="email@example.com" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+				<input type="submit" value="subscribe" /><br>
+		</div>
+		<label for="mce-EMAIL" class="subscribe-message"></label>
+		</form>
+		{% endblock %}
+	</section>
+	{% block footer-section %}
+	<footer>
+		{% block product-and-services-section %}
+		<div>
+			<h5>Product</h5>
+			<ul>
+				<li><a href="/how-does-it-work/">How does it work?</a></li>
+				<li><a href="/stores/">Stores</a></li>
+				<li><a href="/testimonials/">Testimonials</a></li>
+			</ul>
+		</div>
+		{% endblock %}
+
+		{% block help-and-support-section %}
+		<div>
+			<h5>Help and support</h5>
+			<ul>
+				<li><a href="https://support.amuse.io/">Help center</a></li>
+				<li><a href="/contact/">Contact us</a></li>
+			</ul>
+		</div>
+		{% endblock %}
+
+		{% block company-section %}
+		<div>
+			<h5>Company</h5>
+			<ul>
+				<li><a href="/about/">About Amuse</a></li>
+				<li><a href="https://medium.com/@amuse_io">News</a></li>
+				<li><a href="https://careers.amuse.io/">Careers</a></li>
+			</ul>
+		</div>
+		{% endblock %}
+
+		{% block legal-infomation-section %}
+		<div>
+			<h5>Legal information</h5>
+			<ul>
+				<li><a href="https://amuse.io/privacy/">Terms and conditions</a></li>
+				<li><a href="https://amuse.io/privacy/#privacy">Privacy policy</a></li>
+			</ul>
+		</div>
+		{% endblock %}
+
+		{% block follow-amuse-section %}
+		<div>
+			<h5>Follow amuse</h5>
+			<ul>
+				<li><a href="http://www.facebook.com/amuse.io">Facebook</a></li>
+				<li><a href="http://www.twitter.com/amuse_io">Twitter</a></li>
+				<li><a href="http://www.instagram.com/amuse.io/">Instagram</a></li>
+				<li><a href="http://www.linkedin.com/company/amuse.io">Linkedin</a></li>
+				<li><a href="http://www.youtube.com/channel/UCL7LVeztb4Q30iFTCTkFaTQ">Youtube</a></li>
+			</ul>
+		</div>
+		{% endblock %}
+
+		{% block download-amuse-section %}
+		<div>
+			<h5>Download amuse</h5>
+			<ul>
+				<li><a href="https://itunes.apple.com/us/app/amuse-free-music-distribution/id1160922922">For iPhone</a></li>
+				<li><a href="https://play.google.com/store/apps/details?id=io.amuse.android">For Android</a></li>
+			</ul>
+		</div>
+		{% endblock %}
+	</footer>
+	<section>
+		{% block allrights-section %}
+		© Amuseio AB. 2016-2017. All Rights Reserved.
+		{% endblock %}
+	</section>
+	{% endblock %}
+	<script src="https://d1tmd9bi6qn5cf.cloudfront.net/website/js/jquery.ajaxchimp.min.js"></script>
+    <script src="https://d1tmd9bi6qn5cf.cloudfront.net/website/js/main.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        //ga('create', 'UA-72111133-2', 'auto');
+        //ga('send', 'pageview');
+    </script>
+</body>
+</html>

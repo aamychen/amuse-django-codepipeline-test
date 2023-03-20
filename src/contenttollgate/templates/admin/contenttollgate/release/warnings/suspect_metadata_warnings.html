@@ -1,0 +1,14 @@
+{% for warning in analysis_results.suspect_metadata_warnings %}
+  {% if warning.show_warning %}
+    <li class="list-group-item"><b class="warning-type">Suspect metadata</b>
+      {{ warning.property }} <b>{{ warning.value }}</b> matches
+      {% for match in warning.matches %}
+      <i>"{{ match }}"</i>
+      {% endfor %}
+      {% if 'track_id' in warning %}
+        (song {{ songs|get_song_sequence:warning.track_id}})
+        <a href="#{{ warning.track_id }}" class="bi bi-box-arrow-up-right"></a>
+      {% endif %}
+    </li>
+  {% endif %}
+{% endfor %}

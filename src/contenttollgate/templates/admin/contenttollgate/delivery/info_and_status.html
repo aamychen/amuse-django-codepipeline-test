@@ -1,0 +1,50 @@
+<div class="py-2 mb-4 bg-white bg-gradient border rounded-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-vinyl-fill me-2"></i>
+    {{ release.name }} <small class="text-muted">{{ release.id }}</small>
+  </h5>
+<a href="{{ release.cover_art.file.url }}" target="_blank">
+<img src="{{ release.cover_art.file.url_200x200 }}" class="img-fluid rounded-2 mx-auto
+d-block my-4 border border-5">
+</a>
+</div>
+<div class="rounded-2 bg-white border p-2 mt-2">
+    <h5 class="pt-2 ps-2"><i class="bi bi-info-circle-fill me-2"></i>Info & Status</h5>
+  <table class="table">
+    <tr>
+      <th>UPC</th>
+      <td>{{ release.upc_code }}</td>
+    </tr>
+    <tr>
+      <th>Release Date</th>
+      <td>{{ release.release_date|date:"Y-m-d" }}</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <td>{{ release.get_status_display }}</td>
+    </tr>
+  </table>
+</div>
+<div class="rounded-2 bg-white border p-2 mt-2">
+    <h5 class="pt-2 ps-2"><i class="bi bi-info-circle-fill me-2"></i>Deliver to Stores</h5>
+  <ul class="list-group">
+  {% for store in release.stores.all %}
+  {% if store.name == "iTunes / Apple Music" or store.name == "YouTube Content ID" %}
+  <li class="list-group-item list-group-item-warning">{{ store.name }}</li>
+  {% endif %}
+  {% endfor %}
+
+  {% for store in release.stores.all %}
+  {% if store.name != "iTunes / Apple Music" and store.name != "YouTube Content ID" %}
+  <li class="list-group-item">{{ store.name }}</li>
+  {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+<div class="rounded-2 bg-white border p-2 mt-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-info-circle-fill me-2"></i>Excluded Countries</h5>
+  <ul class="list-group">
+  {% for country in release.excluded_country_names %}
+    <li class="list-group-item">{{ country }}</li>
+  {% endfor %}
+  </ul>
+</div>

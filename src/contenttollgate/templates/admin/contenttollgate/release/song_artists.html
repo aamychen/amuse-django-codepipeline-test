@@ -1,0 +1,70 @@
+<div class="rounded-2 bg-white border p-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-people-fill me-2"></i>Song Artist Roles - Song {{ forloop.counter }}</h5>
+  <div class="container form-container" id="song-roles-container-{{ song_form.instance.id }}">
+    {{ songs|get_item:song_form.instance.id|get_item:'artist_roles'|get_management_form }}
+    {% for form in songs|get_item:song_form.instance.id|get_item:'artist_roles' %}
+      {% for field in form %}
+        {% for error in field.errors %}
+          <div class="alert alert-warning">
+            <p><b>{{ field.name|title }}:</b> {{ error }}</p>
+          </div>
+        {% endfor %}
+      {% endfor %}
+      {% for error in form.non_field_errors %}
+        <div class="alert alert-warning">
+          <p> {{ error }} </p>
+        </div>
+      {% endfor %}
+    {% endfor %}
+    {% for error in songs|get_item:song_form.instance.id|get_item:'artist_roles'|non_form_errors %}
+      <div class="alert alert-warning">
+        <p>{{ error }}</p>
+      </div>
+    {% endfor %}
+    {% for song_artist_role_form in songs|get_item:song_form.instance.id|get_item:'artist_roles' %}
+      <div class="row">
+        {% if forloop.first %}
+        <div class="col-xxl-1 col-2">
+          <label>Seq:</label>
+        </div>
+        <div class="col-xxl-7 col-6 song-artist-name">
+          {{ song_artist_role_form.artist.label_tag }}
+        </div>
+        <div class="col-xxl-3 col-3">
+          {{ song_artist_role_form.role.label_tag }}
+        </div>
+        <div class="col-xxl-1 col-1">
+          <label>Delete:</label>
+        </div>
+        {% endif %}
+      </div>
+      <div class="row artist-role-form">
+        <div class="col-xxl-1 col-2 pb-1 pt-2">
+          {{ song_artist_role_form.artist_sequence }}
+        </div>
+        <div class="col-xxl-7 col-6 pb-1 pt-2 song-artist-name">
+          {{ song_artist_role_form.artist }}
+        </div>
+        <div class="col-xxl-3 col-3 pb-1 pt-2">
+          {{ song_artist_role_form.role }}
+        </div>
+        <div class="col-xxl-1 col-1 pb-1 pt-2">
+          {{ song_artist_role_form.DELETE }}
+        </div>
+        {% for hidden_field in song_artist_role_form.hidden_fields %}
+          {{ hidden_field }}
+        {% endfor %}
+      </div>
+    {% endfor %}
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-outline-secondary add-role-button" type="button" onclick="showArtistRoleForm('song-roles-container-{{ song_form.instance.id }}')"><i class="bi bi-plus"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  // On load automatically hide all extra artist role forms
+  hideExtraArtistRoleForms("song-roles-container-{{ song_form.instance.id }}");
+</script>

@@ -1,0 +1,98 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+{% block body_class %}index{% endblock %}
+
+{% block header-section %}
+{% endblock %}
+
+{% block main-section %}
+<div>
+	<div>
+		<div>
+			<h3>Hello, we are Amuse!</h3> <hr>
+		</div>
+
+		<h1>The World’s First</h1>
+		<h1>Mobile Record Label</h1>
+		<p>Get your music delivered to music services like Spotify, Apple Music, Deezer and many more in a matter of minutes. No upfront fees and you keep 100% of what you earn.</p>
+
+		<h3>Download Amuse today!</h3>
+		<div>
+			<a href="http://bit.ly/download-amuse"><img src="{% static 'website/img/app-store-btn.png' %}" alt="Download Amuse on the App Store" /></a>
+			<a href="https://play.google.com/store/apps/details?id=io.amuse.android"><img src="{% static 'website/img/google-play-btn.png' %}" alt="Download Amuse on Google Play" /></a>
+		</div>
+	</div>
+	<div>
+		<img src="{% static 'website/img/device-photos.png' %}">
+	</div>
+</div>
+
+<div class="splash-wrapper">
+  <div id="splash-video">
+    <svg height="60px" version="1.1" viewBox="0 0 68 48" width="60px"><path class="ytp-large-play-button-bg" d="m .66,37.62 c 0,0 .66,4.70 2.70,6.77 2.58,2.71 5.98,2.63 7.49,2.91 5.43,.52 23.10,.68 23.12,.68 .00,-1.3e-5 14.29,-0.02 23.81,-0.71 1.32,-0.15 4.22,-0.17 6.81,-2.89 2.03,-2.07 2.70,-6.77 2.70,-6.77 0,0 .67,-5.52 .67,-11.04 l 0,-5.17 c 0,-5.52 -0.67,-11.04 -0.67,-11.04 0,0 -0.66,-4.70 -2.70,-6.77 C 62.03,.86 59.13,.84 57.80,.69 48.28,0 34.00,0 34.00,0 33.97,0 19.69,0 10.18,.69 8.85,.84 5.95,.86 3.36,3.58 1.32,5.65 .66,10.35 .66,10.35 c 0,0 -0.55,4.50 -0.66,9.45 l 0,8.36 c .10,4.94 .66,9.45 .66,9.45 z" fill="#1f1f1e" fill-opacity="0.81"></path><path d="m 26.96,13.67 18.37,9.62 -18.37,9.55 -0.00,-19.17 z" fill="#fff"></path><path d="M 45.02,23.46 45.32,23.28 26.96,13.67 43.32,24.34 45.02,23.46 z" fill="#ccc"></path></svg>
+  </div>
+</div>
+<script>
+var video = document.getElementById('splash-video'),
+	tag = document.createElement('script'),
+	firstScriptTag = document.getElementsByTagName('script')[0],
+	playerDefaults = {theme:'light', color: 'white', playsinline:1, loop:0, fs: 0, autoplay: 0, autohide: 1, modestbranding: 1, rel: 0, showinfo: 0, controls: 1, disablekb: 1, enablejsapi: 0, iv_load_policy: 3},
+	vid = {'videoId': 'P4hsKo-2fFM', 'suggestedQuality': 'highres'},
+	header = document.getElementsByTagName('header')[0],
+	yt;
+
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+tag.src = 'https://www.youtube.com/player_api';
+
+function onYouTubePlayerAPIReady(){
+	video.onclick = function() {
+		yt = new YT.Player(video.id, {events: {'onReady': onPlayerReady}, playerVars: playerDefaults});
+		window.onload = vidRescale;
+		window.onresize = vidRescale;
+	}
+}
+
+function onPlayerReady(){
+	yt.loadVideoById(vid);
+}
+
+function vidRescale(){
+	var w = header.offsetWidth,
+		h = header.offsetHeight;
+	if (w > 1040) {
+		w = 1040;
+	}
+	if (w/h > 16/9){
+		yt.setSize(w, w/16*9);
+	} else {
+		yt.setSize(h/9*16, h);
+	}
+	h = document.getElementsByTagName('iframe')[0].offsetHeight;
+	header.style.height = h + 'px';
+}
+</script>
+
+<div>
+	<div>
+		<h5>Why you should use Amuse</h5> <hr>
+	</div>
+	<div>
+		<h4>100% royalties</h4>
+		Just as simple as it sounds. Everything you make from our distribution service you keep.
+	</div>
+	<div>
+		<h4>No distribution fees</h4>
+		We don't charge for distribution, because we don't think it should cost anything for the artist to get discovered.
+	</div>
+	<div>
+		<h4>Cancel any time</h4>
+		No long term contracts or limitations, if you want to leave Amuse you can do so whenever you want.
+	</div>
+
+	<div>
+		<a class="btn yellow" href="/how-does-it-work/">learn more</a>
+	</div>
+</div>
+
+{% endblock %}

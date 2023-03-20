@@ -1,0 +1,122 @@
+{% load admin_urls static admin_modify %}
+<div class="rounded-2 bg-white border p-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-check-square-fill me-2"></i>Release Info</h5>
+  <div class="container form-container">
+    <div class="row release-row">
+      {% if release_form.errors %}
+        <div class="alert alert-warning">
+        {% for field in release_form %}
+          {% for error in field.errors %}
+            <p><b>{{ field.name|title }}:</b> {{ error }} </p>
+          {% endfor %}
+        {% endfor %}
+        {% for error in release_form.non_field_errors %}
+          <p> {{ error }} </p>
+        {% endfor %}
+        </div>
+      {% endif %}
+      <div class="col-6">
+        <div>
+          <label>{{ release_form.name.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.name.name }}">
+          {{ release_form.name }}
+        </div>
+      </div>
+      <div class="col-3">
+        <div>
+          <label>Version:</label>
+        </div>
+        <div class="release {{ release_form.release_version.name }}">
+          {{ release_form.release_version }}
+        </div>
+      </div>
+      <div class="col-3">
+        <div>
+          <label>{{ release_form.label.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.label.name }}">
+          {{ release_form.label }}
+        </div>
+      </div>
+    </div>
+    <div class="row release-row">
+      <div class="col-4">
+        <div>
+          <label>{{ release_form.type.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.type.name }}">
+          {{ release_form.type }}
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <label>{{ release_form.genre.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.genre.name }}">
+          {{ release_form.genre }}
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <label>{{ release_form.meta_language.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.meta_language.name }}">
+          {{ release_form.meta_language }}
+        </div>
+      </div>
+    </div>
+    <div class="row release-row">
+      <div class="col-xxl-4 col-xl-8 col-12">
+        <div>
+          <label>{{ release_form.upc.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.upc.name }}">
+          {{ release_form.upc }}
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-6">
+        <div>
+          <label>{{ release_form.original_release_date.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.original_release_date.name }}">
+          {{ release_form.original_release_date }}
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-6">
+        <div>
+          <label>{{ release_form.release_date.label_tag }}</label>
+        </div>
+        <div class="release {{ release_form.release_date.name }}">
+          {{ release_form.release_date }}
+        </div>
+      </div>
+
+    </div>
+    <div class="row release-row">
+      <div class="col-8">
+        <label>Youtube Content ID:</label>
+        <div>
+          {% if yt_cid_status %}
+            🔴 Monetized
+          {% else %}
+            🟢 Not Monetized
+          {% endif %}
+          <input type="submit" class="btn btn-outline-secondary yt-cid-btn" id="enable-button" name="enable-button" value="Enable" form="enable_monetization_form" />
+          <input type="submit" class="btn btn-outline-secondary yt-cid-btn" id="x-button" name="x-button" value="Disable" form="disable_monetization_form" />
+        </div>
+      </div>
+      <div class="col-4">
+        {% if release.schedule_type == 2%}
+          <div id="release-info-schedule-type">
+            <label>Schedule type: </label>
+            <div>{{ release.get_schedule_type_display }}</div>
+          </div>
+        {% else %}
+          <label>Schedule type: </label>
+          <div>{{ release.get_schedule_type_display }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

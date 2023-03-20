@@ -1,0 +1,22 @@
+[
+    {
+        "id": 424089547,
+        "dsp": {
+            "id": 20799134,
+            "name": "Anghami"
+        },
+        "date": "2022-03-10T14:54:48",
+        "action": "TAKEDOWN",
+        "state": "DELIVERED",
+        "ddexBatchId": "20220310145441973",
+        "user": {
+            "id": 92130,
+            "name": "bulk_admin",
+            "label": "Bulk Admin"
+        },
+        "product": {
+            "id": 2165610288,
+            "name": "Test Name"
+        }
+    }
+]

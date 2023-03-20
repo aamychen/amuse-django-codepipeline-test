@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <script src="https://checkoutshopper-live.adyen.com/checkoutshopper/sdk/3.3.0/adyen.js"></script>
+    <script src="https://test.adyen.com/hpp/cse/js/8015712361872168.shtml"></script>
+    <link rel="stylesheet" href="https://checkoutshopper-live.adyen.com/checkoutshopper/sdk/3.3.0/adyen.css" />
+  </head>
+
+  <body>
+    <div id="adyen-widget"></div>
+    <div id="adyen-3ds"></div>
+
+    <h2>Payment Country</h2>
+    <input id="payment-country" value="SE" />
+
+    <h2>Encrypted Payment Data</h2>
+    <pre id="payment-data"></pre>
+
+    <h2>Response</h2>
+    <pre id="response"></pre>
+
+    <script type="text/javascript">
+      var checkout;
+
+      function onComplete3ds(data, url){
+        fetch(url, {
+          method: "PATCH",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json; version=4',
+            'Authorization': 'Token {{ user_token }}'
+          },
+          body: JSON.stringify(data['data']['details'], null)
+        }).then(handleResponse);
+      }
+
+      function handleResponse(response) {
+        response.json().then(response_data => {
+          var url_3ds = '/api/payments/transactions/' + response_data['transaction_id'] + '/';
+          var checkout_data = {
+            onComplete: function(data_3ds) {
+              onComplete3ds(data_3ds, url_3ds);
+            }
+          }
+
+          if('action' in response_data){
+            if(response_data['action']['type'] == 'threeDS2Fingerprint'){
+              checkout_data['fingerprintToken'] = response_data['action']['token'];
+              checkout.create('threeDS2DeviceFingerprint', checkout_data).mount('#adyen-3ds');
+            }
+            else if(response_data['action']['type'] == 'threeDS2Challenge'){
+              checkout_data['challengeToken'] = response_data['action']['token'];
+              checkout.create(response_data['action']['type'], checkout_data).mount('#adyen-3ds');
+            }
+            else {
+              checkout.createFromAction(response_data['action']).mount('#adyen-3ds');
+            }
+          }
+
+          document.getElementById("response").innerHTML = JSON.stringify(response_data, null, "  ");
+        });
+      }
+
+      function showPaymentData(state, component) {
+        document.getElementById("payment-data").innerHTML = JSON.stringify(state.data, null, "  ");
+      }
+
+      function handleSubmit(state, component) {
+        var url = '{% url 'create-adyen-subscription' %}';
+        var data = {
+          'country': document.getElementById("payment-country").value,
+          'plan': {{ subscription_plan_id }},
+          'payment_details': state.data
+        }
+        fetch(url, {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json; version=4',
+            'Authorization': 'Token {{ user_token }}'
+          },
+          body: JSON.stringify(data, null)
+        }).then(handleResponse);
+      }
+
+      checkout = new AdyenCheckout({
+        originKey: '{{ origin_key }}',
+        environment: 'test',
+        paymentMethodsResponse: {
+          'groups': [{'name': 'Credit Card', 'types': ['mc', 'visa', 'amex']}],
+          'paymentMethods': [
+            {
+              'brands': ['mc', 'visa', 'amex'],
+              'details': [
+                {'key': 'encryptedCardNumber', 'type': 'cardToken'},
+                {'key': 'encryptedSecurityCode', 'type': 'cardToken'},
+                {'key': 'encryptedExpiryMonth', 'type': 'cardToken'},
+                {'key': 'encryptedExpiryYear', 'type': 'cardToken'},
+                {'key': 'holderName', 'optional': true, 'type': 'text'},
+              ],
+              'name': 'Credit Card',
+              'type': 'scheme',
+            },
+            {'name': 'Paysafecard', 'supportsRecurring': true, 'type': 'paysafecard'},
+          ],
+        },
+        rootNode: document.getElementById('adyen-widget'),
+        showPayButton: true,
+        onChange: showPaymentData,
+        onSubmit: handleSubmit,
+      });
+      var card = checkout.create("card").mount("#adyen-widget");
+    </script>
+  </body>
+</html>

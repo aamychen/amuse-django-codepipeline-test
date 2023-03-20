@@ -1,0 +1,44 @@
+{% load admin_urls static admin_modify %}
+<div class="container-fluid bg-white border">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-2">
+        <div class="row justify-content-center assign-label">
+          Assigned to: {{ assignee }}
+        </div>
+        <div class="row justify-content-center assign-link">
+            <input type="submit" class="btn btn-sm btn-secondary footer-submit" value="Assign to me" name="assign-user" form="assign_form"/>
+        </div>
+      </div>
+      <div class="col-6">
+          <label for="release_comments" class="comments-label">Comments:</label>
+          {{ comments_form.text }}
+          {{ comments_form.release.as_hidden }}
+          {% if comments_form.errors %}
+            <div class="alert alert-danger">{{ comments_form.errors }}</div>
+          {% endif %}
+      </div>
+      <div class="col-2">
+        {% if support_release_form %}
+        <div class="row support-release">
+          <div class="col">
+            <label>{{ support_release_form.prepared.label_tag }}</label>
+            {{ support_release_form.prepared }}
+          </div>
+        </div>
+        {% endif %}
+        <div class="row release {{ release_form.status.name }} release-status">
+          {{ release_form.status }}
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="row">
+          <button type="submit" name="next" value="False" class="btn btn-primary float-end save-btn footer-submit">Save</button>
+          {% if opts.model_name in 'assignedpreparedrelease,assignedpendingrelease' %}
+            <button type="submit" name="next" value="True" class="btn btn-secondary float-end next-btn footer-submit">Save & Next</button>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

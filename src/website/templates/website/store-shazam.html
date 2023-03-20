@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store shazam{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-shazam.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Shazam</h4>
+	Using our Amuse app you can easily upload your music to Shazam. Because Shazam is a default destination when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About Shazam</h5>
+	<p>Shazam is a mobile app that recognises music that’s being played on radio, on tv or in a bar or a restaurant. It's a great way to discover, explore and share the music. It’s free on Apple, Android and Windows devices. Shazam reaches more than 500 million users in 200 countries, exceeds 100 million monthly active users, and is growing by over 13 million new users each month. As an artist it’s important to encourage discovery of your music. Making sure your music is available to be discovered using Shazam is the first step.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.shazam.com">Shazam</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>190</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

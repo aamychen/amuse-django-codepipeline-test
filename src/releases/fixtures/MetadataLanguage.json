@@ -1,0 +1,1875 @@
+[
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 34,
+    "fields": {
+      "name": "Latvian",
+      "fuga_code": "lv",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 35,
+    "fields": {
+      "name": "Malay",
+      "fuga_code": "ms",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 36,
+    "fields": {
+      "name": "Dutch",
+      "fuga_code": "nl",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 37,
+    "fields": {
+      "name": "Norwegian",
+      "fuga_code": "no",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 55,
+    "fields": {
+      "name": "Cantonese",
+      "fuga_code": "yue_hant",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 1,
+    "fields": {
+      "name": "Afrikaans",
+      "fuga_code": "af",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 2,
+    "fields": {
+      "name": "Arabic",
+      "fuga_code": "ar",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 3,
+    "fields": {
+      "name": "Bulgarian",
+      "fuga_code": "bg",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 4,
+    "fields": {
+      "name": "Bengali",
+      "fuga_code": "bn",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 5,
+    "fields": {
+      "name": "Catalan; Valencian",
+      "fuga_code": "ca",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 6,
+    "fields": {
+      "name": "Chinese; Mandarin simplified",
+      "fuga_code": "cmn_hans",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 7,
+    "fields": {
+      "name": "Chinese; Mandarin traditional",
+      "fuga_code": "cmn_hant",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 8,
+    "fields": {
+      "name": "Czech",
+      "fuga_code": "cs",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 9,
+    "fields": {
+      "name": "Danish",
+      "fuga_code": "da",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 10,
+    "fields": {
+      "name": "German",
+      "fuga_code": "de",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 11,
+    "fields": {
+      "name": "Greek, Modern",
+      "fuga_code": "el",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 12,
+    "fields": {
+      "name": "English",
+      "fuga_code": "en",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 15,
+    "fields": {
+      "name": "Estonian",
+      "fuga_code": "et",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 17,
+    "fields": {
+      "name": "Finnish",
+      "fuga_code": "fi",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 18,
+    "fields": {
+      "name": "French",
+      "fuga_code": "fr",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 19,
+    "fields": {
+      "name": "Irish",
+      "fuga_code": "ga",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 20,
+    "fields": {
+      "name": "Hebrew (modern)",
+      "fuga_code": "he",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 21,
+    "fields": {
+      "name": "Hindi",
+      "fuga_code": "hi",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 22,
+    "fields": {
+      "name": "Croatian",
+      "fuga_code": "hr",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 23,
+    "fields": {
+      "name": "Haitian; Haitian Creole",
+      "fuga_code": "ht",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 24,
+    "fields": {
+      "name": "Hungarian",
+      "fuga_code": "hu",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 25,
+    "fields": {
+      "name": "Indonesian",
+      "fuga_code": "id",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 26,
+    "fields": {
+      "name": "Icelandic",
+      "fuga_code": "is",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 27,
+    "fields": {
+      "name": "Italian",
+      "fuga_code": "it",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 28,
+    "fields": {
+      "name": "Japanese",
+      "fuga_code": "ja",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 29,
+    "fields": {
+      "name": "Kazakh",
+      "fuga_code": "kk",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 30,
+    "fields": {
+      "name": "Korean",
+      "fuga_code": "ko",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 31,
+    "fields": {
+      "name": "Latin",
+      "fuga_code": "la",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 32,
+    "fields": {
+      "name": "Lao",
+      "fuga_code": "lo",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 33,
+    "fields": {
+      "name": "Lithuanian",
+      "fuga_code": "lt",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 57,
+    "fields": {
+      "name": "01. Instrumental",
+      "fuga_code": "zxx",
+      "sort_order": 25
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 60,
+    "fields": {
+      "name": "Abkhazian",
+      "fuga_code": null,
+      "iso_639_1": "ab",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 59,
+    "fields": {
+      "name": "Afar",
+      "fuga_code": null,
+      "iso_639_1": "aa",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 62,
+    "fields": {
+      "name": "Akan",
+      "fuga_code": null,
+      "iso_639_1": "ak",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 165,
+    "fields": {
+      "name": "Albanian",
+      "fuga_code": null,
+      "iso_639_1": "sq",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 63,
+    "fields": {
+      "name": "Amharic",
+      "fuga_code": null,
+      "iso_639_1": "am",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 64,
+    "fields": {
+      "name": "Aragonese",
+      "fuga_code": null,
+      "iso_639_1": "an",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 100,
+    "fields": {
+      "name": "Armenian",
+      "fuga_code": null,
+      "iso_639_1": "hy",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 65,
+    "fields": {
+      "name": "Assamese",
+      "fuga_code": null,
+      "iso_639_1": "as",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 66,
+    "fields": {
+      "name": "Avaric",
+      "fuga_code": null,
+      "iso_639_1": "av",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 61,
+    "fields": {
+      "name": "Avestan",
+      "fuga_code": null,
+      "iso_639_1": "ae",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 67,
+    "fields": {
+      "name": "Aymara",
+      "fuga_code": null,
+      "iso_639_1": "ay",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 68,
+    "fields": {
+      "name": "Azerbaijani",
+      "fuga_code": null,
+      "iso_639_1": "az",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 73,
+    "fields": {
+      "name": "Bambara",
+      "fuga_code": null,
+      "iso_639_1": "bm",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 69,
+    "fields": {
+      "name": "Bashkir",
+      "fuga_code": null,
+      "iso_639_1": "ba",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 88,
+    "fields": {
+      "name": "Basque",
+      "fuga_code": null,
+      "iso_639_1": "eu",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 70,
+    "fields": {
+      "name": "Belarusian",
+      "fuga_code": null,
+      "iso_639_1": "be",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 71,
+    "fields": {
+      "name": "Bihari languages",
+      "fuga_code": null,
+      "iso_639_1": "bh",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 72,
+    "fields": {
+      "name": "Bislama",
+      "fuga_code": null,
+      "iso_639_1": "bi",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 76,
+    "fields": {
+      "name": "Bosnian",
+      "fuga_code": null,
+      "iso_639_1": "bs",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 75,
+    "fields": {
+      "name": "Breton",
+      "fuga_code": null,
+      "iso_639_1": "br",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 136,
+    "fields": {
+      "name": "Burmese",
+      "fuga_code": null,
+      "iso_639_1": "my",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 78,
+    "fields": {
+      "name": "Chamorro",
+      "fuga_code": null,
+      "iso_639_1": "ch",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 77,
+    "fields": {
+      "name": "Chechen",
+      "fuga_code": null,
+      "iso_639_1": "ce",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 81,
+    "fields": {
+      "name": "Church Slavic",
+      "fuga_code": null,
+      "iso_639_1": "cu",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 82,
+    "fields": {
+      "name": "Chuvash",
+      "fuga_code": null,
+      "iso_639_1": "cv",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 121,
+    "fields": {
+      "name": "Cornish",
+      "fuga_code": null,
+      "iso_639_1": "kw",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 79,
+    "fields": {
+      "name": "Corsican",
+      "fuga_code": null,
+      "iso_639_1": "co",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 80,
+    "fields": {
+      "name": "Cree",
+      "fuga_code": null,
+      "iso_639_1": "cr",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 84,
+    "fields": {
+      "name": "Divehi, Dhivehi, Maldivian",
+      "fuga_code": null,
+      "iso_639_1": "dv",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 85,
+    "fields": {
+      "name": "Dzongkha",
+      "fuga_code": null,
+      "iso_639_1": "dz",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 87,
+    "fields": {
+      "name": "Esperanto",
+      "fuga_code": null,
+      "iso_639_1": "eo",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 86,
+    "fields": {
+      "name": "Ewe",
+      "fuga_code": null,
+      "iso_639_1": "ee",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 91,
+    "fields": {
+      "name": "Faroese",
+      "fuga_code": null,
+      "iso_639_1": "fo",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 90,
+    "fields": {
+      "name": "Fijian",
+      "fuga_code": null,
+      "iso_639_1": "fj",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 89,
+    "fields": {
+      "name": "Fulah",
+      "fuga_code": null,
+      "iso_639_1": "ff",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 94,
+    "fields": {
+      "name": "Galician",
+      "fuga_code": null,
+      "iso_639_1": "gl",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 124,
+    "fields": {
+      "name": "Ganda",
+      "fuga_code": null,
+      "iso_639_1": "lg",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 110,
+    "fields": {
+      "name": "Georgian",
+      "fuga_code": null,
+      "iso_639_1": "ka",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 95,
+    "fields": {
+      "name": "Guaraní",
+      "fuga_code": null,
+      "iso_639_1": "gn",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 96,
+    "fields": {
+      "name": "Gujarati",
+      "fuga_code": null,
+      "iso_639_1": "gu",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 98,
+    "fields": {
+      "name": "Hausa",
+      "fuga_code": null,
+      "iso_639_1": "ha",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 101,
+    "fields": {
+      "name": "Herero",
+      "fuga_code": null,
+      "iso_639_1": "hz",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 99,
+    "fields": {
+      "name": "Hiri Motu",
+      "fuga_code": null,
+      "iso_639_1": "ho",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 107,
+    "fields": {
+      "name": "Ido",
+      "fuga_code": null,
+      "iso_639_1": "io",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 104,
+    "fields": {
+      "name": "Igbo",
+      "fuga_code": null,
+      "iso_639_1": "ig",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 102,
+    "fields": {
+      "name": "Interlingua",
+      "fuga_code": null,
+      "iso_639_1": "ia",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 103,
+    "fields": {
+      "name": "Interlingue",
+      "fuga_code": null,
+      "iso_639_1": "ie",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 108,
+    "fields": {
+      "name": "Inuktitut",
+      "fuga_code": null,
+      "iso_639_1": "iu",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 106,
+    "fields": {
+      "name": "Inupiaq",
+      "fuga_code": null,
+      "iso_639_1": "ik",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 109,
+    "fields": {
+      "name": "Javanese",
+      "fuga_code": null,
+      "iso_639_1": "jv",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 114,
+    "fields": {
+      "name": "Kalaallisut, Greenlandic",
+      "fuga_code": null,
+      "iso_639_1": "kl",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 116,
+    "fields": {
+      "name": "Kannada",
+      "fuga_code": null,
+      "iso_639_1": "kn",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 117,
+    "fields": {
+      "name": "Kanuri",
+      "fuga_code": null,
+      "iso_639_1": "kr",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 118,
+    "fields": {
+      "name": "Kashmiri",
+      "fuga_code": null,
+      "iso_639_1": "ks",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 115,
+    "fields": {
+      "name": "Khmer",
+      "fuga_code": null,
+      "iso_639_1": "km",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 112,
+    "fields": {
+      "name": "Kikuyu, Gikuyu",
+      "fuga_code": null,
+      "iso_639_1": "ki",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 156,
+    "fields": {
+      "name": "Kinyarwanda",
+      "fuga_code": null,
+      "iso_639_1": "rw",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 155,
+    "fields": {
+      "name": "Kirundi",
+      "fuga_code": null,
+      "iso_639_1": "rn",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 120,
+    "fields": {
+      "name": "Komi",
+      "fuga_code": null,
+      "iso_639_1": "kv",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 111,
+    "fields": {
+      "name": "Kongo",
+      "fuga_code": null,
+      "iso_639_1": "kg",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 119,
+    "fields": {
+      "name": "Kurdish",
+      "fuga_code": null,
+      "iso_639_1": "ku",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 113,
+    "fields": {
+      "name": "Kwanyama, Kuanyama",
+      "fuga_code": null,
+      "iso_639_1": "kj",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 122,
+    "fields": {
+      "name": "Kyrgyz",
+      "fuga_code": null,
+      "iso_639_1": "ky",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 125,
+    "fields": {
+      "name": "Limburgan",
+      "fuga_code": null,
+      "iso_639_1": "li",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 126,
+    "fields": {
+      "name": "Lingala",
+      "fuga_code": null,
+      "iso_639_1": "ln",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 127,
+    "fields": {
+      "name": "Luba-Katanga",
+      "fuga_code": null,
+      "iso_639_1": "lu",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 123,
+    "fields": {
+      "name": "Luxembourgish",
+      "fuga_code": null,
+      "iso_639_1": "lb",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 131,
+    "fields": {
+      "name": "Macedonian",
+      "fuga_code": null,
+      "iso_639_1": "mk",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 128,
+    "fields": {
+      "name": "Malagasy",
+      "fuga_code": null,
+      "iso_639_1": "mg",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 132,
+    "fields": {
+      "name": "Malayalam",
+      "fuga_code": null,
+      "iso_639_1": "ml",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 135,
+    "fields": {
+      "name": "Maltese",
+      "fuga_code": null,
+      "iso_639_1": "mt",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 97,
+    "fields": {
+      "name": "Manx",
+      "fuga_code": null,
+      "iso_639_1": "gv",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 130,
+    "fields": {
+      "name": "Māori",
+      "fuga_code": null,
+      "iso_639_1": "mi",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 134,
+    "fields": {
+      "name": "Marathi (Marāṭhī)",
+      "fuga_code": null,
+      "iso_639_1": "mr",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 129,
+    "fields": {
+      "name": "Marshallese",
+      "fuga_code": null,
+      "iso_639_1": "mh",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 133,
+    "fields": {
+      "name": "Mongolian",
+      "fuga_code": null,
+      "iso_639_1": "mn",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 137,
+    "fields": {
+      "name": "Nauru",
+      "fuga_code": null,
+      "iso_639_1": "na",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 144,
+    "fields": {
+      "name": "Navajo",
+      "fuga_code": null,
+      "iso_639_1": "nv",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 141,
+    "fields": {
+      "name": "Ndonga",
+      "fuga_code": null,
+      "iso_639_1": "ng",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 140,
+    "fields": {
+      "name": "Nepali",
+      "fuga_code": null,
+      "iso_639_1": "ne",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 159,
+    "fields": {
+      "name": "Northern Sami",
+      "fuga_code": null,
+      "iso_639_1": "se",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 139,
+    "fields": {
+      "name": "North Ndebele",
+      "fuga_code": null,
+      "iso_639_1": "nd",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 138,
+    "fields": {
+      "name": "Norwegian Bokmål",
+      "fuga_code": null,
+      "iso_639_1": "nb",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 142,
+    "fields": {
+      "name": "Norwegian Nynorsk",
+      "fuga_code": null,
+      "iso_639_1": "nn",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 105,
+    "fields": {
+      "name": "Nuosu",
+      "fuga_code": null,
+      "iso_639_1": "ii",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 145,
+    "fields": {
+      "name": "Nyanja",
+      "fuga_code": null,
+      "iso_639_1": "ny",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 146,
+    "fields": {
+      "name": "Occitan",
+      "fuga_code": null,
+      "iso_639_1": "oc",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 147,
+    "fields": {
+      "name": "Ojibwa",
+      "fuga_code": null,
+      "iso_639_1": "oj",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 149,
+    "fields": {
+      "name": "Oriya (macrolanguage)",
+      "fuga_code": null,
+      "iso_639_1": "or",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 148,
+    "fields": {
+      "name": "Oromo",
+      "fuga_code": null,
+      "iso_639_1": "om",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 150,
+    "fields": {
+      "name": "Ossetian",
+      "fuga_code": null,
+      "iso_639_1": "os",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 151,
+    "fields": {
+      "name": "Pāli",
+      "fuga_code": null,
+      "iso_639_1": "pi",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 152,
+    "fields": {
+      "name": "Pashto, Pushto",
+      "fuga_code": null,
+      "iso_639_1": "ps",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 153,
+    "fields": {
+      "name": "Quechua",
+      "fuga_code": null,
+      "iso_639_1": "qu",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 154,
+    "fields": {
+      "name": "Romansh",
+      "fuga_code": null,
+      "iso_639_1": "rm",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 162,
+    "fields": {
+      "name": "Samoan",
+      "fuga_code": null,
+      "iso_639_1": "sm",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 160,
+    "fields": {
+      "name": "Sango",
+      "fuga_code": null,
+      "iso_639_1": "sg",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 157,
+    "fields": {
+      "name": "Sardinian",
+      "fuga_code": null,
+      "iso_639_1": "sc",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 93,
+    "fields": {
+      "name": "Scottish Gaelic, Gaelic",
+      "fuga_code": null,
+      "iso_639_1": "gd",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 166,
+    "fields": {
+      "name": "Serbian",
+      "fuga_code": null,
+      "iso_639_1": "sr",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 163,
+    "fields": {
+      "name": "Shona",
+      "fuga_code": null,
+      "iso_639_1": "sn",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 158,
+    "fields": {
+      "name": "Sindhi",
+      "fuga_code": null,
+      "iso_639_1": "sd",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 161,
+    "fields": {
+      "name": "Sinhalese, Sinhala",
+      "fuga_code": null,
+      "iso_639_1": "si",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 164,
+    "fields": {
+      "name": "Somali",
+      "fuga_code": null,
+      "iso_639_1": "so",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 168,
+    "fields": {
+      "name": "Southern Sotho",
+      "fuga_code": null,
+      "iso_639_1": "st",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 143,
+    "fields": {
+      "name": "South Ndebele",
+      "fuga_code": null,
+      "iso_639_1": "nr",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 169,
+    "fields": {
+      "name": "Sundanese",
+      "fuga_code": null,
+      "iso_639_1": "su",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 170,
+    "fields": {
+      "name": "Swahili",
+      "fuga_code": null,
+      "iso_639_1": "sw",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 167,
+    "fields": {
+      "name": "Swati",
+      "fuga_code": null,
+      "iso_639_1": "ss",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 179,
+    "fields": {
+      "name": "Tahitian",
+      "fuga_code": null,
+      "iso_639_1": "ty",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 171,
+    "fields": {
+      "name": "Tajik",
+      "fuga_code": null,
+      "iso_639_1": "tg",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 177,
+    "fields": {
+      "name": "Tatar",
+      "fuga_code": null,
+      "iso_639_1": "tt",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 74,
+    "fields": {
+      "name": "Tibetan",
+      "fuga_code": null,
+      "iso_639_1": "bo",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 172,
+    "fields": {
+      "name": "Tigrinya",
+      "fuga_code": null,
+      "iso_639_1": "ti",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 175,
+    "fields": {
+      "name": "Tonga (Tonga Islands)",
+      "fuga_code": null,
+      "iso_639_1": "to",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 176,
+    "fields": {
+      "name": "Tsonga",
+      "fuga_code": null,
+      "iso_639_1": "ts",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 174,
+    "fields": {
+      "name": "Tswana",
+      "fuga_code": null,
+      "iso_639_1": "tn",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 173,
+    "fields": {
+      "name": "Turkmen",
+      "fuga_code": null,
+      "iso_639_1": "tk",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 178,
+    "fields": {
+      "name": "Twi",
+      "fuga_code": null,
+      "iso_639_1": "tw",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 180,
+    "fields": {
+      "name": "Uyghur",
+      "fuga_code": null,
+      "iso_639_1": "ug",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 181,
+    "fields": {
+      "name": "Uzbek",
+      "fuga_code": null,
+      "iso_639_1": "uz",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 182,
+    "fields": {
+      "name": "Venda",
+      "fuga_code": null,
+      "iso_639_1": "ve",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 183,
+    "fields": {
+      "name": "Volapük",
+      "fuga_code": null,
+      "iso_639_1": "vo",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 184,
+    "fields": {
+      "name": "Walloon",
+      "fuga_code": null,
+      "iso_639_1": "wa",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 83,
+    "fields": {
+      "name": "Welsh",
+      "fuga_code": null,
+      "iso_639_1": "cy",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 92,
+    "fields": {
+      "name": "Western Frisian",
+      "fuga_code": null,
+      "iso_639_1": "fy",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 185,
+    "fields": {
+      "name": "Wolof",
+      "fuga_code": null,
+      "iso_639_1": "wo",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 186,
+    "fields": {
+      "name": "Xhosa",
+      "fuga_code": null,
+      "iso_639_1": "xh",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 187,
+    "fields": {
+      "name": "Yiddish",
+      "fuga_code": null,
+      "iso_639_1": "yi",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 188,
+    "fields": {
+      "name": "Yoruba",
+      "fuga_code": null,
+      "iso_639_1": "yo",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 189,
+    "fields": {
+      "name": "Zhuang, Chuang",
+      "fuga_code": null,
+      "iso_639_1": "za",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 13,
+    "fields": {
+      "name": "Spanish; Latin & Caribbean",
+      "fuga_code": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 14,
+    "fields": {
+      "name": "Spanish; Castilian",
+      "fuga_code": "es",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 16,
+    "fields": {
+      "name": "Persian",
+      "fuga_code": "fa",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 38,
+    "fields": {
+      "name": "Panjabi, Punjabi",
+      "fuga_code": "pa",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 39,
+    "fields": {
+      "name": "Polish",
+      "fuga_code": "pl",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 40,
+    "fields": {
+      "name": "Portuguese",
+      "fuga_code": "pt",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 41,
+    "fields": {
+      "name": "Romanian, Moldavian, Moldovan",
+      "fuga_code": "ro",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 42,
+    "fields": {
+      "name": "Russian",
+      "fuga_code": "ru",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 43,
+    "fields": {
+      "name": "Sanskrit (Saṁskṛta)",
+      "fuga_code": "sa",
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 44,
+    "fields": {
+      "name": "Slovak",
+      "fuga_code": "sk",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 45,
+    "fields": {
+      "name": "Slovene",
+      "fuga_code": "sl",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 46,
+    "fields": {
+      "name": "Swedish",
+      "fuga_code": "sv",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 47,
+    "fields": {
+      "name": "Tamil",
+      "fuga_code": "ta",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 48,
+    "fields": {
+      "name": "Telugu",
+      "fuga_code": "te",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 49,
+    "fields": {
+      "name": "Thai",
+      "fuga_code": "th",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 50,
+    "fields": {
+      "name": "Tagalog",
+      "fuga_code": "tl",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 51,
+    "fields": {
+      "name": "Turkish",
+      "fuga_code": "tr",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 52,
+    "fields": {
+      "name": "Ukrainian",
+      "fuga_code": "uk",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 53,
+    "fields": {
+      "name": "Urdu",
+      "fuga_code": "ur",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 54,
+    "fields": {
+      "name": "Vietnamese",
+      "fuga_code": "vi",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  },
+  {
+    "model": "releases.metadatalanguage",
+    "pk": 56,
+    "fields": {
+      "name": "Zulu",
+      "fuga_code": "zu",
+      "iso_639_1": null,
+      "sort_order": 999
+    }
+  }
+]

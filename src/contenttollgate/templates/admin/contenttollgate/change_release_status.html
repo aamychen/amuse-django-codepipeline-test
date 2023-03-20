@@ -1,0 +1,62 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+  {{ media }}
+{% endblock %}
+{% block title %}Release {{ release.pk }} delivery {{ block.super }}{% endblock %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+  <link href="/static/admin/css/forms-nested.css" type="text/css" media="all" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/pending-release.css' %}">
+{% endblock %}
+
+{% block coltype %}colM{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-form{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    &rsaquo; <a href="{% url opts|admin_urlname:'change' release.pk %}">{{ release|truncatewords:"18" }}</a>
+    &rsaquo; Delivery actions
+  </div>
+  {% if release.has_locked_splits %}
+  <div style="background-color: red; color: white; text-transform: uppercase;">
+      warning! this user is in an active ffwd agreement with this release. do not take down this release without approval from your team lead.
+  </div>
+  {% elif release.user.has_locked_splits %}
+  <div style="background-color: #FAE62D; color: black; text-transform: uppercase;">
+      warning! this user is in an active ffwd agreement with another release. do not take down this release without approval from your team lead.
+  </div>
+  {% endif %}
+  {% if release.has_invalid_artist_roles %}
+  <div style="background-color: red; color: white; text-transform: uppercase;">
+      WARNING! PRIMARY- AND FEATURED ARTIST CANNOT SHARE THE SAME ARTIST ID ON TRACK. REMOVE DUPLICATE ARTIST(S) FROM THE TRACK(S) BEFORE DELIVERING THIS RELEASE.
+  </div>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  <div id="content-main" style="margin-top: 10px;">
+      <form action="{% url opts|admin_urlname:'change_status' release.pk %}" method="post" novalidate>
+        {% csrf_token %}
+        <select id="status" name="status">
+        {% for key, val in status_list.items %}
+        {% if release.status == key %}
+        <option value={{ key }} selected>{{ val }}</option>
+        {% else %}
+        <option value={{ key }}>{{ val }}</option>
+        {% endif %}
+        {% endfor %}
+        </select>
+<input type="submit" value="change_status">
+    </form>
+  </div>
+{% endblock %}

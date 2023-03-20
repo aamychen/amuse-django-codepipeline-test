@@ -1,0 +1,29 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store itunes{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-itunes.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on iTunes</h4>
+	Using our Amuse app you can easily upload your music to iTunes. Because iTunes is a default store when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About iTunes</h5>
+	<p>iTunes is the world's leading download store. iTunes is available on iOS devices and on desktop. Although iTunes sell everything from digital movies, books, apps and TV-Shows, we only deal with music.<br><br> 
+Every time a music fan from anywhere in the world purchases music on iTunes, the artist gets paid.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.apple.com/itunes">Apple iTunes</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>113</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% load static%}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Django Admin CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css">
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Replace audio file JS and CSS -->
+    <script type="text/javascript" src="{% static "admin/js/jquery.filer.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/alerts.js" %}"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery.filer@1.3.0/css/jquery.filer.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/release.css' %}?v=1">
+
+    <script type="text/javascript" src="{% static "admin/js/dynamic-artist-roles.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/replace-audio-file.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/release-view-helpers.js" %}?v=1"></script>
+
+    {% block title %}{% endblock %}
+  </head>
+  <body class="body-background" >
+    {% block content %}{% endblock %}
+  </body>
+</html>

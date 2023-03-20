@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store tidal{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-tidal.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Tidal</h4>
+	Using our Amuse app you can easily upload your music to Tidal. Because Tidal is a default store when you upload music, all you need to do is follow the process and press submit.
+    
+	<h5>About Tidal</h5>
+	<p>Tidal is a subscription streaming service as well as a download store. Tidal is owned by some of the world’s biggest artists such as; Jay Z, Beyoncé, Prince, Rihanna, Kanye West, Nicki Minaj, Daft Punk, Jack White, Madonna, Arcade Fire, Alicia Keys, Usher, Chris Martin, Calvin Harris, deadmau5, Jason Aldean and J. Cole. Tidal is available on desktop, iOS and Android.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.tidal.com">Tidal</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>52</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

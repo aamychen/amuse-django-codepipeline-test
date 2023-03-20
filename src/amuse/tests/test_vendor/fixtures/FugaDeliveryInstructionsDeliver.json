@@ -1,0 +1,2341 @@
+{
+    "delivery_instructions": [
+        {
+            "contractId": 1239840529,
+            "dsp": {
+                "name": "Pandora",
+                "id": 7851192,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": null,
+            "lead_time": "NEVER_DELIVER",
+            "release_date": null,
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "BLOCKED",
+            "action": null,
+            "actions": [
+                "unblock"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2115593081,
+            "dsp": {
+                "name": "Nuuday A/S",
+                "id": 464139,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871936,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1166217937,
+            "dsp": {
+                "name": "Napster",
+                "id": 103731,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871888,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                },
+                {
+                    "id": 6518101911,
+                    "user": {
+                        "id": 5160100626,
+                        "name": "filotas"
+                    },
+                    "action": "DELIVER",
+                    "state": "PROCESSING"
+                }
+            ],
+            "action": "DELIVER",
+            "state": "PROCESSING",
+            "actions": [
+                "edit",
+                "deliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2131167103,
+            "dsp": {
+                "name": "Facebook Audio Library",
+                "id": 1499657856,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871838,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "INSTANT_GRATIFICATION",
+                    "name": "Instant gratification"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BACKDATED_TAKEDOWN",
+                    "name": "Sets takedown date to 2 days before the submission date"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2131165469,
+            "dsp": {
+                "name": "Facebook Fingerprinting",
+                "id": 1415672002,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871792,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "INSTANT_GRATIFICATION",
+                    "name": "Instant gratification"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BACKDATED_TAKEDOWN",
+                    "name": "Sets takedown date to 2 days before the submission date"
+                },
+                {
+                    "id": "SUPPORTS_SCREEN_CAPTURE_LINK",
+                    "name": "Supports VideoScreenCapture as the video preview LinkDescription"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2223558371,
+            "dsp": {
+                "name": "iMusica",
+                "id": 103725,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871774,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2129242808,
+            "dsp": {
+                "name": "Anghami",
+                "id": 20799134,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871757,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "LYRICS",
+                    "name": "Allow sending lyrics as part of a DDEX delivery"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "ATTACHMENTS",
+                    "name": "All attachment types"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1145271403,
+            "dsp": {
+                "name": "Amazon",
+                "id": 99268,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871739,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "INSTANT_GRATIFICATION",
+                    "name": "Instant gratification"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "PRIME_ON_DEMAND_STREAMING",
+                    "name": "Usage rights: Allow prime on demand streaming"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1144455475,
+            "dsp": {
+                "name": "TIDAL",
+                "id": 3440259,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871713,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1159335716,
+            "dsp": {
+                "name": "Deezer",
+                "id": 2100357,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871690,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "RECEIVE_VERIFY_MEDIA_IDS",
+                    "name": "Identifiers issued by Verify Media"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1181039756,
+            "dsp": {
+                "name": "YouTube Content ID",
+                "id": 1048705,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-19T00:00:00",
+            "lead_time": "NEVER_DELIVER",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "BLOCKED",
+            "action": null,
+            "actions": [
+                "unblock"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1149524409,
+            "dsp": {
+                "name": "YouTube Music",
+                "id": 13285026,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871674,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1145271410,
+            "dsp": {
+                "name": "Apple Music",
+                "id": 1330598,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-19T00:00:00",
+            "lead_time": "NEVER_DELIVER",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "BLOCKED",
+            "action": null,
+            "actions": [
+                "unblock"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "INSTANT_GRATIFICATION",
+                    "name": "Instant gratification"
+                },
+                {
+                    "id": "ARTIST_IDENTIFIER",
+                    "name": "Artist identifiers issued by the DSP"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "ATTACHMENTS",
+                    "name": "All attachment types"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                },
+                {
+                    "id": "PRE_ORDER_ONLY",
+                    "name": "PreOrder Only"
+                },
+                {
+                    "id": "LYRICS",
+                    "name": "Allow sending lyrics as part of a DDEX delivery"
+                },
+                {
+                    "id": "LABEL_IDENTIFIERS",
+                    "name": "Label identifiers issued by the DSP"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1143380458,
+            "dsp": {
+                "name": "Spotify",
+                "id": 746109,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [
+                {
+                    "id": 3479871663,
+                    "user": {
+                        "id": 92130,
+                        "name": "bulk_admin"
+                    },
+                    "action": "DELIVER",
+                    "state": "DELIVERED"
+                }
+            ],
+            "state": "DELIVERED",
+            "action": "DELIVER",
+            "actions": [
+                "edit",
+                "takedown",
+                "redeliver"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ARTIST_IDENTIFIER",
+                    "name": "Artist identifiers issued by the DSP"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2223559182,
+            "dsp": {
+                "name": "7Digital",
+                "id": 247916,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "INSTANT_GRATIFICATION",
+                    "name": "Instant gratification"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "BACKDATED_TAKEDOWN",
+                    "name": "Sets takedown date to 2 days before the submission date"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337137,
+            "dsp": {
+                "name": "AWA",
+                "id": 847103579,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 3522012503,
+            "dsp": {
+                "name": "Beatport",
+                "id": 89882,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337140,
+            "dsp": {
+                "name": "Bmat",
+                "id": 1158892521,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 3655850980,
+            "dsp": {
+                "name": "fizy",
+                "id": 1988507361,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "ATTACHMENTS",
+                    "name": "All attachment types"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337143,
+            "dsp": {
+                "name": "Jaxsta Music",
+                "id": 1186352005,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "LYRICS",
+                    "name": "Allow sending lyrics as part of a DDEX delivery"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1166217940,
+            "dsp": {
+                "name": "JioSaavn",
+                "id": 316911752,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337153,
+            "dsp": {
+                "name": "Joox",
+                "id": 1517454273,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198484711,
+            "dsp": {
+                "name": "Kakao / MelOn",
+                "id": 1686928319,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337162,
+            "dsp": {
+                "name": "KkBox",
+                "id": 121452605,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337165,
+            "dsp": {
+                "name": "Kuack Media",
+                "id": 1226212715,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "PRE_ORDER_ONLY",
+                    "name": "PreOrder Only"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337168,
+            "dsp": {
+                "name": "LINE Music",
+                "id": 1232212955,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1166217943,
+            "dsp": {
+                "name": "Music in 'Ayoba'",
+                "id": 78395129,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337171,
+            "dsp": {
+                "name": "NetEase Cloud Music",
+                "id": 1382854531,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337196,
+            "dsp": {
+                "name": "Qobuz",
+                "id": 9940949,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "PRE_ORDER_ONLY",
+                    "name": "PreOrder Only"
+                },
+                {
+                    "id": "BURN_CD",
+                    "name": "Usage right: Allow cd burning"
+                },
+                {
+                    "id": "USER_GENERATED_VIDEO",
+                    "name": "Usage rights: Allow user generated video"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "USER_GENERATED_AUDIO",
+                    "name": "Usage rights: Allow user generated audio"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 4496886086,
+            "dsp": {
+                "name": "Tencent",
+                "id": 1461025062,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "LYRICS",
+                    "name": "Allow sending lyrics as part of a DDEX delivery"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337213,
+            "dsp": {
+                "name": "TIM Music",
+                "id": 1207204780,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337235,
+            "dsp": {
+                "name": "TouchTunes",
+                "id": 1130831671,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "METADATA_LOCALIZATION",
+                    "name": "Supports metadata localizations"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337251,
+            "dsp": {
+                "name": "United Media Agency (UMA)",
+                "id": 1210987244,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "PRE_ORDER_ONLY",
+                    "name": "PreOrder Only"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 3271475927,
+            "dsp": {
+                "name": "Xiami",
+                "id": 1234931270,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "PERMANENT_DOWNLOAD",
+                    "name": "Usage rights: Allow permanent download"
+                },
+                {
+                    "id": "BURN_CD",
+                    "name": "Usage right: Allow cd burning"
+                },
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "PRE_ORDER",
+                    "name": "PreOrder"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "USER_GENERATED_AUDIO",
+                    "name": "Usage rights: Allow user generated audio"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337273,
+            "dsp": {
+                "name": "Xite",
+                "id": 1553828531,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 2198337289,
+            "dsp": {
+                "name": "Yandex Music",
+                "id": 1209287754,
+                "is_iip_dds": true,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "AD_SUPPORTED_STREAMING",
+                    "name": "Usage rights: Allow ad supported streaming"
+                },
+                {
+                    "id": "ASSET_LEVEL_RELEASE_DATES",
+                    "name": "Asset level release dates"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "BOOKLET_ATTACHMENTS",
+                    "name": "Only booklet Attachments"
+                },
+                {
+                    "id": "SUBSCRIPTION_STREAMING",
+                    "name": "Usage rights: Allow subscription streaming"
+                },
+                {
+                    "id": "TERRITORY_BASED_RELEASE_DATES",
+                    "name": "Territory based release dates"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "SUBSCRIPTION_DOWNLOAD",
+                    "name": "Usage rights: Allow subscription download"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "TRACK_TERRITORIES",
+                    "name": "Track Territories"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        },
+        {
+            "contractId": 1196033732,
+            "dsp": {
+                "name": "YouTube Music (legacy)",
+                "id": 49262307,
+                "is_iip_dds": false,
+                "is_ssf_dds": false
+            },
+            "lead_date": "2021-01-18T00:00:00",
+            "lead_time": "IMMEDIATELY",
+            "release_date": "2021-01-18T00:00:00",
+            "release_time": null,
+            "enable_asset_release_dates": true,
+            "enable_asset_territories": true,
+            "instruction_list": [],
+            "state": "NOT_ADDED",
+            "action": null,
+            "actions": [
+                "edit",
+                "block"
+            ],
+            "delivery_capabilities": [
+                {
+                    "id": "REQUIRE_CP_DPID",
+                    "name": "Requires DPID"
+                },
+                {
+                    "id": "MIXED_MEDIA",
+                    "name": "Deliver both video and audio tracks"
+                },
+                {
+                    "id": "SUPPORTS_DDEX_BATCH_DELIVERY",
+                    "name": "Supports DDEX Batch delivery"
+                },
+                {
+                    "id": "GLOBAL_RELEASE_TIME",
+                    "name": "Time of day for global release date"
+                },
+                {
+                    "id": "RECEIVE_INSTRUMENTS",
+                    "name": "Receive instruments"
+                }
+            ],
+            "exclude_territories": [],
+            "include_territories": []
+        }
+    ],
+    "exclusive": false
+}

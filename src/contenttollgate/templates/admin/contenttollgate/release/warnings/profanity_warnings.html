@@ -1,0 +1,14 @@
+{% for warning in analysis_results.profanity_warnings %}
+  {% if warning.show_warning and songs|show_profanity_warning:warning %}
+    <li class="list-group-item"><b class="warning-type">Profanity Warning</b>
+      {{ warning.property}} <i> {{ warning.value }}</i> matches:
+      {% for match in warning.matches %}
+        {{ match }}
+      {% endfor %}
+      {% if 'track_id' in warning %}
+        (song {{ songs|get_song_sequence:warning.track_id}})
+        <a href="#{{ warning.track_id }}" class="bi bi-box-arrow-up-right"></a>
+      {% endif %}
+    </li>
+  {% endif %}
+{% endfor %}

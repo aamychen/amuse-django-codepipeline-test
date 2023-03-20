@@ -1,0 +1,246 @@
+{% load admin_urls static admin_modify %}
+
+<div class="row">
+  <div class="col form-box">
+    <a id="{{song_form.instance.id}}"></a>
+    <div class="rounded-2 bg-white border p-2">
+      <h5 class="pt-2 ps-2"><i class="bi bi-music-note-beamed me-2"></i> Song {{ song_form.sequence.value }}: {{ song_form.name.value }} </h5>
+      <div class="container form-container">
+        <div class="row song-row">
+          {% if song_form.errors %}
+            <div class="alert alert-warning">
+              {% for field in song_form %}
+                {% for error in field.errors %}
+                  <p><b>{{ field.name|title }}:</b> {{ error }} </p>
+                {% endfor %}
+              {% endfor %}
+              {% for error in song_form.non_field_errors %}
+                <p> {{ error }} </p>
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="col-xxl-1 col-xl-2 col-2 song">
+            <div>
+              <label>Seq:</label>
+            </div>
+            <div class="song {{ song_form.sequence.name }}">
+              <input type="number" id="{{ song_form.sequence.id_for_label}}" value="{{ song_form.sequence.value }}" name="song-{{ forloop.counter0 }}-sequence" class="form-control"
+              {% if release.status == 6 or release.status == 8 %}
+                readonly
+              {% endif %}
+              >
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-6 song">
+            <div>
+              {{ song_form.name.label_tag }}
+            </div>
+            <div class="song {{ song_form.name.name }}">
+              {{ song_form.name }}
+            </div>
+          </div>
+          <div class="col-xxl-5 col-xl-4 col-4 song">
+            <div>
+              {{ song_form.version.label_tag }}
+            </div>
+            <div class="song {{ song_form.version.name }}">
+              {{ song_form.version }}
+            </div>
+          </div>
+        </div>
+        <div class="row song-row">
+          <div class="col-4 song">
+            <div>
+              {{ song_form.meta_language.label_tag }}
+            </div>
+            <div class="song {{ song_form.meta_language.name }}">
+              {{ song_form.meta_language }}
+            </div>
+          </div>
+          <div class="col-4 song">
+            <div>
+              {{ song_form.meta_audio_locale.label_tag }}
+            </div>
+            <div class="song {{ song_form.meta_audio_locale.name }}">
+              {{ song_form.meta_audio_locale }}
+            </div>
+          </div>
+          <div class="col-4 song">
+            <div>
+              <label> Youtube CID: </label>
+            </div>
+            <div class="song {{ song_form.youtube_content_id.name }}">
+              {{ song_form.youtube_content_id }}
+            </div>
+          </div>
+        </div>
+        <div class="row song-row">
+          <div class="col-6 song">
+            <div>
+              {{ song_form.isrc.label_tag }}
+            </div>
+            <div class="song {{ song_form.isrc.name }}">
+              {{ song_form.isrc }}
+            </div>
+          </div>
+          <div class="col-3 song">
+            <div>
+              {{ song_form.origin.label_tag }}
+            </div>
+            <div class="song {{ song_form.origin.name }}">
+              {{ song_form.origin }}
+            </div>
+          </div>
+          <div class="col-3 song">
+            <div>
+              {{ song_form.explicit.label_tag }}
+            </div>
+            <div class="song {{ song_form.explicit.name }}">
+              {{ song_form.explicit }}
+            </div>
+          </div>
+        </div>
+        <div class="row song-row">
+          <div class="col-10">
+            <div>
+              <label>File:</label>
+            </div>
+            <audio controls class="audio-controls">
+              <source src={{ songs|get_item:song_form.instance.id|get_song_file_url:'mp3_file' }} type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <a class="btn audio-file-btn btn-sm btn-outline-secondary" href="{{ songs|get_item:song_form.instance.id|get_song_file_url:'wav_file' }}">Download</a>
+            <button type="button" class="btn audio-file-btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#songUploadModal{{ song_form.instance.id }}">
+             Upload WAV
+            </button>
+
+            <div class="modal fade" id="songUploadModal{{ song_form.instance.id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="{% url "admin:releases_song_replace" song_form.instance.id %}" width="100%" height="360" ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 song">
+            <div>
+              <label>Audio Matches:</label>
+            </div>
+            <div class="audio-match-result">
+              {% if songs|get_item:song_form.instance.id|get_item:'acr_warning_severity' == 'critical'%}
+                <a data-bs-toggle="collapse" id="warnings-collapse-toggle-{{ song_form.instance.id }}" href="#collapse-acr-warnings-{{ song_form.instance.id }}" role="button" aria-expanded="false" aria-controls="collapse-acr-warnings-{{ song_form.instance.id }}" class="acr-match-icon">
+                  <i class="bi bi-exclamation-square" style="color: red;"></i>
+                </a>
+              {% elif songs|get_item:song_form.instance.id|get_item:'acr_warning_severity' == 'match' %}
+                <a data-bs-toggle="collapse" id="warnings-collapse-toggle-{{ song_form.instance.id }}" href="#collapse-acr-warnings-{{ song_form.instance.id }}" role="button" aria-expanded="false" aria-controls="collapse-acr-warnings-{{ song_form.instance.id }}" class="acr-match-icon">
+                  <i class="bi bi-exclamation-square" style="color: rgb(245, 233, 109);"></i>
+                </a>
+              {% else %}
+                <a href="#{{ song_form.instance.id }}" class="acr-match-icon">
+                  <i class="bi bi-check2-square" style="color: green;"></i>
+                </a>
+              {% endif %}
+              {% if songs|get_item:song_form.instance.id|get_item:'audio_matches' %}
+                <a href="{% url 'admin:amuse_acrcloudmatch_changelist' %}?song_id={{ song_form.instance.id }}" target="_blank" class="acr-match-icon">
+                  <img src="/static/admin/img/icon-no.svg" alt="matches">
+                </a>
+              {% else %}
+                <a href="{% url 'admin:amuse_acrcloudmatch_changelist' %}?song_id={{ song_form.instance.id }}" target="_blank" class="acr-match-icon">
+                  <img src="/static/admin/img/icon-yes.svg" alt="no-matches">
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% for field in song_form.hidden_fields %}
+          {{ field }}
+        {% endfor %}
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-secondary advanced-settings-button" data-bs-toggle="collapse" href="#advanced-settings-{{ song_form.sequence.value }}" type="button" aria-expanded="false" aria-controls="advanced-settings-{{ song_form.sequence.value }}">
+              <i class="bi bi-chevron-double-down"></i>
+            </button>
+          </div>
+        </div>
+        <div class="collapse multi-collapse" id="advanced-settings-{{ song_form.sequence.value }}">
+          <div class="row song-row">
+            <div class="col-4 song">
+              <div>
+                {{ song_form.recording_year.label_tag }}
+              </div>
+              <div class="song {{ song_form.recording_year.name }}">
+                {{ song_form.recording_year }}
+              </div>
+            </div>
+            <div class="col-4 song">
+              <div>
+                {{ song_form.genre.label_tag }}
+              </div>
+              <div class="song{{ song_form.genre.name }}">
+                {{ song_form.genre }}
+              </div>
+            </div>
+            <div class="col-4 song">
+              <div>
+                {{ song_form.preview_start_time.label_tag }}
+              </div>
+              <div class="song {{ song_form.preview_start_time.name }}">
+                {{ song_form.preview_start_time }}
+              </div>
+            </div>
+          </div>
+          <div class="row song-row">
+            <div class="col-4 song">
+              <div>
+                {{ song_form.id.label_tag }}
+              </div>
+              <div class="song">
+                <input value="{{ song_form.id.value }}" readonly class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row song-row">
+        </div>
+        <label>Error flags:</label>
+        <div class="row">
+          <div class="col-6 song">
+            {% for error_flag in song_form.error_flags %}
+              {% if error_flag.data.value|starts_with:"audio" %}
+                <div class="row">
+                  <label for="{{ error_flag.id_for_label }}"><input type="checkbox" class="form-check-input" name="song-{{ forloop.parentloop.counter0 }}-error_flags" value={{ error_flag.data.value }} class="form-check-input" id="{{ error_flag.id_for_label }}" {% if error_flag.data.value in songs|get_item:song_form.instance.id|get_item:'selected_error_flags' %}checked{% endif %}>
+                    {{ error_flag.data.label }}
+                  </label>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="col-6 song">
+            {% for error_flag in song_form.error_flags %}
+              {% if not error_flag.data.value|starts_with:"audio" %}
+                <div class="row">
+                  <label for="{{ error_flag.id_for_label }}"><input type="checkbox" class="form-check-input" name="song-{{ forloop.parentloop.counter0 }}-error_flags" value={{ error_flag.data.value }} class="form-check-input" id="{{ error_flag.id_for_label }}" {% if error_flag.data.value in songs|get_item:song_form.instance.id|get_item:'selected_error_flags' %}checked{% endif %}>
+                    {{ error_flag.data.label }}
+                  </label>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col form-box">
+    {% if song_form.instance.id in analysis_results.tracks_with_warnings %}
+      {% include "admin/contenttollgate/release/track_warnings.html" %}
+    {% endif %}
+    {% include "admin/contenttollgate/release/song_artists.html" %}
+  </div>
+</div>

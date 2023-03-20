@@ -1,0 +1,108 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+  {{ media }}
+{% endblock %}
+{% block title %}Split for Release - {{ release.name }} - {{ release.pk }} {{ block.super }}{% endblock %}
+
+{% block coltype %}colM{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-form{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; Splits for Release
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div id="content-main">
+    <form action="" method="post" id="{{ opts.model_name }}_delivery_form" novalidate>
+      {% csrf_token %}
+      <div id="release" class="cols">
+        <div>
+            <h1>Release: {{ release.name }} ({{ release.id }})</h1>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Release Date</th>
+                    <th>Status</th>
+                    <th>User</th>
+                    <th>Main Primary Artist</th>
+                    <th>Main Primary Artist Owner</th>
+                </tr>
+                <tr>
+                    <td>{{ release.id }}</td>
+                    <td>{{ release.release_date }}</td>
+                    <td>{{ release.get_status_display }}</td>
+                    <td>{{ release.user }} ({{ release.user_id }})</td>
+                    <td>{{ release.main_primary_artist }} ({{ release.main_primary_artist.id }})</td>
+                    <td>{{ release.main_primary_artist.owner }} ({{ release.main_primary_artist.owner.id }})</td>
+                </tr>
+            </table>
+
+            <h2>Royalty Splits by song</h2>
+                {% for song in release.songs.all %}
+                <h3>Song: {{ song.name }} ({{ song.id }})</h3>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>song_id</th>
+                        <th>User</th>
+                        <th>Rate</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Is owner</th>
+                        <th>Status</th>
+                        <th>Revision</th>
+                    </tr>
+                    {% for split in song.royalty_splits.all %}
+                    <tr>
+                        <td>{{ split.id }}</td>
+                        <td>{{ song.id }}</td>
+                        <td>{{ split.user }} ({{ split.user_id }})</td>
+                        <td>{{ split.rate }}</td>
+                        <td>{{ split.start_date }}</td>
+                        <td>{{ split.end_date }}</td>
+                        <td>{{ split.is_owner }}</td>
+                        <td>{{ split.get_status_display }}</td>
+                        <td>{{ split.revision }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endfor %}
+
+            <h2>Validation Results</h2>
+            {% if validation_results %}
+            <table>
+                <tr>
+                    <th>Error Type</th>
+                    <th>Song with error</th>
+                </tr>
+                {% for key, values in validation_results.items %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>
+                        {% for value in values %}
+                        {{ value }}
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <p>
+                <button type="button" disabled=disabled>Show suggested fixes</button>
+            </p>
+            {% else %}
+            <p>No issues found!</p>
+            {% endif %}
+        </div>
+      </div>
+    </form>
+  </div>
+{% endblock %}

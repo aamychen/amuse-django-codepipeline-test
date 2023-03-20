@@ -1,0 +1,9 @@
+<div class="row">
+    {% with widget=widget.subwidgets.0 %}
+        {% include widget.template_name %}
+        <span class="changelink" style="margin-right: 10px"></span>
+    {% endwith %}
+    {% with widget=widget.subwidgets.1 %}
+        {% include widget.template_name %}
+    {% endwith %}
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization Response</title>
+</head>
+<body>
+<script type="text/javascript" nonce="nonce_string">
+  (function(window) {
+    const targetOrigin = "https://musicproviders.spotify.com";
+    const authorizationResponse = {
+      type: "authorization_response",
+      response: {
+        "code": "auth_code_to_extract",
+        "state": "state_string"
+      }
+    };
+
+    const mainWin = (window.opener) ? window.opener : window.parent;
+    mainWin.postMessage(authorizationResponse, targetOrigin);
+  })(this);
+</script>
+</body>
+</html>

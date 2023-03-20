@@ -1,0 +1,84 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls static admin_modify %}
+{% block extrahead %}{{ block.super }}
+    <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+    {{ media }}
+{% endblock %}
+{% block extrastyle %}{{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static " admin/css/forms.css" %}">{% endblock %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'admin:index' %}">{% trans "Home" %}</a>
+        &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+        &rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+        &rsaquo; {% trans title %}
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div id="content-main">
+        <h2>Update selected fields</h2>
+
+
+        <form method="post" novalidate id="bulk_edit_form">
+            {% csrf_token %}
+            {% for obj in objects %}
+                <input type="hidden" name="_selected_action" value="{{ obj.pk }}"/>
+            {% endfor %}
+            <input type="hidden" name="post" value="yes">
+            <input type="hidden" name="action" value="bulk_edit"/>
+            {% for hidden in form.hidden_fields %}
+                {{ hidden }}
+            {% endfor %}
+            <input type="text" name="step" value="1" hidden/>
+
+            {% if form.errors %}
+                <p class="errornote">
+                {% if errors|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
+                </p>
+                {{ form.non_field_errors }}
+            {% endif %}
+
+            <fieldset class="module aligned">
+                {% for field in form.visible_fields %}
+                    <div class="fieldWrapper">
+                        {{ field.errors }}
+                        {{ field.label_tag }} {{ field }}
+                        <div class="help">{{ field.help_text }}</div>
+
+                    </div>
+                    <p>
+                    <hr/>
+                    </p>
+                {% endfor %}
+            </fieldset>
+            <script>
+                !function ($, a) { "use strict"; $("input[type='checkbox']").filter("input[name$='_0']").each(function (b, a) { a.onchange = function (a) { if (!a.target || !a.target.name || !a.target.name.endsWith("_0")) return; let b = a.target.name.slice(0, -1) + "1"; $(`[name='${b}']`).prop("disabled", !a.target.checked) } }) }(django.jQuery)
+            </script>
+            <div class="delete-confirmation in">
+            <div><strong style="background-color: #FAE62D; color: black; text-transform: uppercase;">
+            {% trans "Are you sure you want to update the selected users?" %}
+            </strong></div>
+                <h3>{% trans Users %}</h3>
+                <ul style="list-style: none; ">
+                    {% for user in objects|slice:":20" %}
+                        <li>
+                            {% trans "User:" %}
+                            <a class="nav-link"
+                               href="{% url 'admin:users_user_change' user.pk %}">{{ user.name }}</a>
+                        </li>
+                    {% endfor %}
+                    {% if objects|length > 20 %}
+                        <li style="list-style: none; padding-right: 10px">...</li>
+                    {% endif %}
+                </ul>
+                <p>Users: {{ objects|length }}</p>
+            </div>
+            <div class="submit-row">
+                <input type=button value="{% trans "No, Go Back" %}" onClick="javascript:history.go(-1);">
+                <input type="submit" value="{% trans 'Yes, Update All' %}">
+            </div>
+        </form>
+    </div>
+{% endblock %}

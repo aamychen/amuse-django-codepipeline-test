@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store napster{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-napster.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Napster</h4>
+	Using our Amuse app you can easily upload your music to Napster. Because Napster is a default store when you upload music, all you need to do is follow the process and press submit.
+    
+	<h5>About Napster</h5>
+	<p>Napster was founded as a pioneering peer-to-peer (P2P) file sharing Internet service that emphasized sharing digital audio files, typically songs, encoded in MP3 format. The company ran into legal difficulties over copyright infringement, ceased operations and was eventually acquired by Roxio. In its second incarnation Napster became an online music store until it was acquired by Rhapsody. Napster’s streaming music services give members ad-free access to more than 32 million songs. The can listen on their phone, at home, at work, or in the car . The have a team of editors that create a curated music experience that's easy for members worldwide to tap into for new and exciting music.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://www.napster.com">www.napster.com</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>36</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

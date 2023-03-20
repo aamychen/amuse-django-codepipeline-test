@@ -1,0 +1,3 @@
+This is where static files gets collected on deploys.
+It exists in dev for awareness and surprise management.
+Please avoid using this dir.

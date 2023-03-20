@@ -1,0 +1,26 @@
+{% with has_multiple_warnings=analysis_results.silence_detection_warnings|has_multiple_warnings  %}
+  {% if has_multiple_warnings %}
+    <li class="list-group-item"><b class="warning-type">Silence Detected</b>
+      in songs:
+      <ul id="song-position-list">
+        {% for warning in analysis_results.silence_detection_warnings %}
+          {% if warning.show_warning %}
+            <li><a id="acr-warning-{{ warning.track_id }}" href="#{{ warning.track_id }}">{{ songs|get_song_sequence:warning.track_id }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% else %}
+    {% for warning in analysis_results.x %}
+      {% if warning.show_warning %}
+        <li class="list-group-item"><b class="warning-type">Silence detected</b>
+          {{ warning.warning_label }}
+          {% if 'track_id' in warning %}
+            (song {{ songs|get_song_sequence:warning.track_id }})
+            <a href="#{{ warning.track_id }}" class="bi bi-box-arrow-up-right"></a>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endwith %}

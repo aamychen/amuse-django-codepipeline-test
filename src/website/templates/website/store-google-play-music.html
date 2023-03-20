@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block body_class %}store google-play-music{% endblock %}
+{% block stores_menu %}active{% endblock %}
+
+{% block header-section %}
+	<img src="{% static 'website/img/header-google-play-music.svg' %}">
+{% endblock %}
+
+
+{% block main-section %}
+<div>
+	<h4>Get your music on Google Play Music</h4>
+	Using our Amuse app you can easily upload your music to Google Play Music. Because Google Play Music is a default store when you upload music, all you need to do is follow the process and press submit.
+
+	<h5>About Google Play Music</h5>
+	<p>Google Play Music is a music streaming service and online music locker operated by Google. Users with standard accounts can upload and listen to up to 50,000 songs from their personal libraries at no cost. A ”Google Play All Access" subscription, sold in combination with YouTube Red for US$9.99 per month, entitles users to on-demand streaming of any song in the Google Play Music catalogue for their geographical region and the ability to create custom radio stations. Users can purchase additional tracks for their library through the music store section of Google Play. Google Play Music mobile app allows music to be stored and listened to offline.</p><br><br>
+	<b>More info here:</b><br>
+	<a href="https://play.google.com/music/">Google Play Music</a>
+</div>
+<fieldset>
+	<legend>Available in</legend>
+	<h1>62</h1>
+	<h3>countries</h3>
+</fieldset>
+{% endblock %}

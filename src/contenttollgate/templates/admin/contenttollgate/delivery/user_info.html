@@ -1,0 +1,90 @@
+<div class="rounded-2 bg-white border p-2">
+  <h5 class="pt-2 ps-2"><i class="bi bi-people-fill me-2"></i>User Info</h5>
+<table class="table-responsive">
+<table class="table table-borderless">
+  <tr>
+    <th>Submitted by:</th>
+    <td>👤
+      <a href="{% url 'admin:users_user_change' creator.pk %}" target="_blank">
+      {{ creator.name }}
+      </a>
+    </td>
+    <td>💌{{ creator.email }}</td>
+    <td>🌏{{ creator.country }}</td>
+    <td>📱
+      {% if created_event %}
+      {{ created_event.get_client_display}}/{{ created_event.version|default:"unknown" }}
+      {% else %}
+      n/a
+      {% endif %}
+    </td>
+    <td>
+      {{ creator.category|get_user_category_symbol }} {{ creator.get_category_display }}
+    </td>
+    <td>
+      {% if creator.tier == 1 %}
+      ➕
+      {% elif creator.tier == 2 %}
+      💸
+      {% else %}
+      Free
+      {% endif %}
+    </td>
+    <td>♿️
+      <a href="{{ creator.get_zendesk_url }}">Zendesk</a>
+    </td>
+    <td>📥
+      <a href="{{ creator.get_mandrill_url }}">Mandrill</a>
+    </td>
+  </tr>
+  <tr>
+    <th>Owner:</th>
+    <td>👤
+      <a href="{% url 'admin:users_user_change' release.user.pk %}" target="_blank">
+      {{ release.user.name }}
+      </a>
+    </td>
+    <td>💌{{ release.user.email }}</td>
+    <td>🌏{{ release.user.country }}</td>
+    <td>📱
+      {% if created_event %}
+      {{ created_event.get_client_display}}/{{ created_event.version|default:"unknown" }}
+      {% else %}
+      n/a
+      {% endif %}
+    </td>
+    <td>
+      {{ release.user.category|get_user_category_symbol }} {{ release.user.get_category_display }}
+    </td>
+    <td>
+      {% if release.user.tier == 1 %}
+      ➕
+      {% elif release.user.tier == 2 %}
+      💸
+      {% else %}
+      Free
+      {% endif %}
+    </td>
+    <td>♿️
+      <a href="{{ release.user.get_zendesk_url }}">Zendesk</a>
+    </td>
+    <td>📥
+      <a href="{{ release.user.get_mandrill_url }}">Mandrill</a>
+    </td>
+  </tr>
+  <tr>
+    <th>Misc:</th>
+    <td>🎤
+      <a href="{% url 'admin:users_artistv2_change' main_artist.pk %}" target="_blank">
+      {{ main_artist }}
+      </td>
+    <td colspan="5">
+      {% if main_artist.spotify_for_artists_url %}
+      🔗 S4A
+      {% else %}
+      ❌ No S4A
+      {% endif %}
+    </td>
+</table>
+</table>
+</div>

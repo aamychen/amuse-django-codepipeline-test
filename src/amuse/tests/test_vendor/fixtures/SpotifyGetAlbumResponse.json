@@ -1,0 +1,1425 @@
+{
+    "deliveredData": {
+        "name": "",
+        "artists": [
+            {
+                "name": "name",
+                "uri": "",
+                "role": "main artist",
+                "avatarUri": "",
+                "isVerified": false
+            }
+        ],
+        "uri": "",
+        "url": "",
+        "type": "ep",
+        "coverArtImage": "",
+        "tracks": [],
+        "labelName": "",
+        "licensorName": "",
+        "feedName": "",
+        "primaryReleaseId": "",
+        "upc": "",
+        "originalReleaseDate": "2022-11-22",
+        "pLine": "",
+        "cLine": "",
+        "ean": "",
+        "courtesyLine": "",
+        "feedGid": "",
+        "licensorId": "",
+        "titleVersion": ""
+    },
+    "effectiveData": {
+        "name": "album_name",
+        "artists": [
+            {
+                "name": "artist_name1",
+                "uri": "spotify:artist:artist_id1",
+                "role": "main artist",
+                "avatarUri": "",
+                "isVerified": false
+            },
+            {
+                "name": "artist_name2",
+                "uri": "spotify:artist:artist_id2",
+                "role": "composer",
+                "avatarUri": "",
+                "isVerified": false
+            }
+        ],
+        "uri": "spotify:album:album_id",
+        "url": "https://open.spotify.com/album/album_id",
+        "type": "EP",
+        "coverArtImage": "https://i.scdn.co/image/image",
+        "tracks": [
+            {
+                "name": "song_name1",
+                "duration": 171311,
+                "discNumber": 1,
+                "trackNumber": 1,
+                "isrc": "SE62M1234567",
+                "explicitLyrics": false,
+                "uri": "spotify:track:track_id1"
+            },
+            {
+                "name": "song_name2",
+                "duration": 205191,
+                "discNumber": 1,
+                "trackNumber": 2,
+                "isrc": "SE62M1234568",
+                "explicitLyrics": false,
+                "uri": "spotify:track:track_id2"
+            },
+            {
+                "name": "song_name3",
+                "duration": 193384,
+                "discNumber": 1,
+                "trackNumber": 3,
+                "isrc": "SE62M1234569",
+                "explicitLyrics": false,
+                "uri": "spotify:track:track_id3"
+            },
+            {
+                "name": "song_name4",
+                "duration": 217600,
+                "discNumber": 1,
+                "trackNumber": 4,
+                "isrc": "SE62M1234570",
+                "explicitLyrics": false,
+                "uri": "spotify:track:track_id4"
+            }
+        ],
+        "labelName": "labelName",
+        "licensorName": "Amuseio AB",
+        "feedName": "amuseio",
+        "primaryReleaseId": "7316111222333",
+        "upc": "7316111222333",
+        "originalReleaseDate": "2022-11-22",
+        "pLine": "pLine",
+        "cLine": "cLine",
+        "ean": "",
+        "courtesyLine": "",
+        "feedGid": "feedGid",
+        "licensorId": "licensorId",
+        "titleVersion": ""
+    },
+    "availability": {
+        "HK": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PS": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "HN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PY": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "HR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "HT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "HU": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "QA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ID": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "IE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AD": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "IL": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "IN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ZA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "IQ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "IS": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AL": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "IT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ZM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AU": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "AZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "RO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ZW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BB": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "RS": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BD": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "JM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BF": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "JO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "RW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BH": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "JP": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BI": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BJ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SB": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SC": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BS": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SI": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BY": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "BZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SK": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SL": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KH": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KI": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CD": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ST": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SV": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CH": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CI": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "SZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CL": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "KZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TD": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CV": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TH": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CY": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LB": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TJ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "CZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LC": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TL": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LI": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LK": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "DE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TV": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "DJ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "TZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "DK": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LS": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "DM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LU": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LV": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "DO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "UA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "LY": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "UG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "DZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MC": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MD": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ME": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MH": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "EC": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MK": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "US": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ML": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "EE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "EG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "UY": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "UZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MU": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MV": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MX": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MY": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "MZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "VC": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ES": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "ET": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "VE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "VN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NI": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NL": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "VU": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NO": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NP": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "FI": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "FJ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "FM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "FR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "NZ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GB": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "WS": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GD": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "OM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GH": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GM": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GN": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GQ": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GR": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GT": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GW": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PA": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "GY": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "XK": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PE": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PG": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PH": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PK": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        },
+        "PL": {
+            "deliveredStart": "2022-11-22 00:00:00",
+            "deliveredEnd": "",
+            "effectiveStart": "2022-11-22 00:00:00",
+            "effectiveEnd": "",
+            "status": "DELIVERED"
+        }
+    },
+    "deliveries": [
+        {
+            "deliveryId": "20221123165100761",
+            "action": "update",
+            "deliveredAt": "2022-11-23 16:51:45",
+            "feedName": "",
+            "productId": "7316111222333",
+            "source": "",
+            "feedGid": "feedGid",
+            "deliveryStatus": "Succeeded",
+            "deliveryErrors": [],
+            "deliveryErrorsAndTypes": []
+        },
+        {
+            "deliveryId": "20221103091727321",
+            "action": "insert",
+            "deliveredAt": "2022-11-03 09:20:58",
+            "feedName": "",
+            "productId": "7316111222333",
+            "source": "",
+            "feedGid": "feedGid",
+            "deliveryStatus": "Succeeded",
+            "deliveryErrors": [],
+            "deliveryErrorsAndTypes": []
+        }
+    ],
+    "artistPin": {
+        "isBlocked": false
+    }
+}

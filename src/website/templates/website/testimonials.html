@@ -1,0 +1,35 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block body_class %}testimonials{% endblock %}
+{% block testimonials_menu %}active{% endblock %}
+
+{% block header-section %}
+	<h1>We <span>love</span> you too.</h1>
+{% endblock %}
+
+{% block main-section %}
+<div>
+	<img src="{% static 'website/img/imogen-heap.jpg' %}">
+	<div>
+	<h2>Brilliant</h2>
+	Amuse have made a great app for any independent artist to freely upload their songs and metadata to music services globally in one go, and at no charge or commission! I tried it for the first time, uploading a song on the Thursday night and by Saturday morning it was up, everywhere! Brilliant, simple, gets the job done. Look forward to payments and usage data also returning in one place. Am excited to see where amuse will venture next and look forward to collaborating with them.
+	<h5>— Grammy Award winning artist Imogen Heap [Distribution]</h5>
+	</div>
+</div>
+<div>
+	<div>
+	<h2>Simply the best deal compared to other services</h2>
+	 Unlimited releases with 100% royalties, fast support, and always accessible in your pocket. Also, with the possibility to get signed based on stats!
+	<h5>— Plàsi  [Signed Artist]</h5>
+	</div>
+	<img src="{% static 'website/img/plasi.jpg' %}">
+</div>
+<div>
+	<img src="{% static 'website/img/bishat.jpg' %}">
+	<div>
+	<h2>I like the simplicity of Amuse</h2>
+	Amuse lets me do everything from my phone and I really like that. I have released all my songs on my own label MINAMIN and Amuse is a great service for getting my music out there. I have tried different services before but I like the simplicity of Amuse and what they offer.
+	<h5>— Swedish emerging artist Bishat  [Distribution]</h5>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "website/simple.html" %}
+{% load i18n %}
+
+{% block title %}
+	{% trans "Withdrawal verification failed" %} | {{ block.super }}
+{% endblock %}
+
+{% block content %}
+		<p>{% trans "Your withdrawal could not be verified." %}</p>
+{% endblock %}
+
